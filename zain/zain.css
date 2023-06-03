@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Work+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+
+#entiresections{
+    --green:#A8CA55;
+    --purple:#D761DC;
+    --blue:#9686FC;
+    --light-black:#1B1C19;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#entiresections  #herosection{
+    width: 100%;
+    min-height: 100vh;
+    max-width: fit-content;
+   
+    
+    font-family: 'Work Sans', sans-serif;
+    
+}
+#entiresections  #herosection .navbar{
+    display: flex;
+font-size: 1.5vw;
+margin:0 09%;
+justify-content: center;
+align-items: center;
+}
+#entiresections  #herosection .navbar .logo{
+    width: 20%;
+    
+}
+#entiresections  #herosection .navbar .logo img{
+    width: 100%;
+    transition: all .2s ease-in-out;
+   
+}
+#entiresections  #herosection .navbar img:hover{
+    transform:translateY(-30px) ;
+    transition:all .2s ease-in-out;
+    animation-duration: 1s;
+}
+#entiresections  #herosection .navbar #mobile{
+    display: none;
+    align-items: center;
+    cursor: pointer;
+}
+
+#entiresections  #herosection .navbar .right{
+    width: 90%;
+}
+#entiresections  #herosection .navbar ul a{
+    text-decoration: none;
+    color: black;
+}
+#entiresections  #herosection .navbar ul a  li{
+font-weight:  300;
+}
+
+#entiresections  #herosection .navbar  ul{
+    display: flex;
+list-style: none;
+justify-content: space-around;
+margin-left: 05%;
+align-items: center;
+}
+
+
+#entiresections  #herosection .navbar  ul li button{
+    padding:0.7rem 1.2rem  ;
+    background: #1b1c19;
+    color: white;
+    font-weight: 500;
+    border-radius: 50px;
+    font-size: 1.3vw;
+    border: none;
+}
+#entiresections  #herosection .navbar  ul li button:hover{
+    background-color: var(--green);
+    transition: all 0.4s ease-in-out;
+}
+
+
+/* mainhero */
+#entiresections  #herosection .mainhero{
+    width: 90%;
+    margin:5% 09%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+#entiresections  #herosection .mainhero #leftdata{
+
+    width: 45%;
+    
+    line-height: 1.2;
+}
+#entiresections  #herosection .mainhero #rightdata{
+    width: 45%;
+    
+    
+}
+#entiresections  #herosection .mainhero #leftdata .upperpart{
+
+    color: #a8ca55;
+background-color: #A8CA551A;
+font-family: 'Work Sans', sans-serif;
+
+width: 130px;
+height: 15px;
+padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 30px;
+    margin-top: 15px;
+}
+#entiresections  #herosection .mainhero #leftdata .maintext {
+    font-size: 5.1vw;
+    font-family: "Luckiest Guy",cursive;
+    font-weight: 400;
+    margin-bottom: 1.4rem;
+   margin-top: 24px;
+   padding-right: 24px;
+    
+}
+#entiresections  #herosection .mainhero #leftdata .maintext #colorchange1 {
+color: var(--green);
+}
+#entiresections  #herosection .mainhero #leftdata .maintext #colorchange2 {
+    color: var(--blue);
+    }
+    #entiresections  #herosection .mainhero #leftdata .maintext #colorchange3 {
+        color: var(--purple);
+        }
+        #entiresections  #herosection .mainhero #leftdata #bottomtext{
+            font-size: 16px;
+    font-family: "Work Sans",sans-serif;
+            margin: 0px 0px 16px;
+            color: var(--light-black);
+            margin-bottom: 1rem;
+        }
+        #entiresections  #herosection .mainhero #leftdata #mainherobutton button{
+        background: var(--purple);
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 50px;
+    margin: 25px 0px 0px;
+    font-family: "Work Sans",sans-serif;
+    font-weight: 700;
+    
+}
+#entiresections  #herosection .mainhero #leftdata #mainherobutton button:hover{
+    background-color: black;
+    transition: all 0.4s ease-in-out;
+}
+
+#entiresections  #herosection .mainhero #rightdata img{
+   position: relative;
+   height: 90%;
+   width: 100%;
+   flex-wrap: wrap;
+   margin:0 13%;
+   align-items: center;
+    overflow: hidden;
+}
+
+/* trusted */
+#entiresections #trusted{
+    position: relative;
+    background-color:rgb(242, 241, 254);
+    width: 100%;
+    text-align: center;
+    font-family: "Work Sans",sans-serif;
+    font-size: 38px;
+    font-weight: 800;
+   padding: 4rem 0;
+
+    
+}
+#entiresections #trusted #trustedimages img{
+  
+    margin: 5.5rem 0;
+    height: 60px;
+    width: 90px;
+    
+}
+#entiresections #trusted #trustedimages span{
+   margin: 0 52px;
+}
+#entiresections #trusted .title #colorchange4{
+    color: var(--purple);
+}
+
+/* solutions */
+
+#entiresections #solutions  #solutiontitle{
+    text-align: center;
+    font-family: "Luckiest Guy",cursive;
+    font-size: 40px;
+    line-height: 1.2;
+    word-spacing: 6px;
+   
+    font-weight: 400;
+   padding: 4rem 0;
+}
+#entiresections #solutions  .allboxes{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 8%;
+    
+    
+    
+   
+}
+#entiresections #solutions .allboxes .boxes{
+    width: 26%;
+   
+   text-align: left !important;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 50px rgba(0,0,0,.12);
+    border: 0;
+    border-radius: 25px;
+    padding: 2rem;
+    min-height: 400px;
+    font-family: "Work Sans",sans-serif;
+    position: relative;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+}
+#entiresections #solutions  .allboxes .boxes h5{
+    font-weight: 600;
+    color: var(--light-black);
+    font-size: 24px;
+    margin: 20px 0px 28px;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    
+    
+}
+#entiresections #solutions  #mobile{
+display: none;
+
+}
+#entiresections #solutions .allboxes .boxes{
+    width: 26%;
+   
+   text-align: left !important;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 50px rgba(0,0,0,.12);
+    border: 0;
+    border-radius: 25px;
+    padding: 2rem;
+    min-height: 400px;
+    font-family: "Work Sans",sans-serif;
+    position: relative;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+}
+#entiresections #solutions .allboxes .boxes p{
+font-weight: 300;
+font-size: 16px;
+font-weight: 500;
+margin-bottom: 5rem;
+color: var(--light-black);
+}
+#entiresections #solutions .allboxes .boxes img{
+width: 154px;
+height: 123px;
+}
+#entiresections #solutions .allboxes .boxes button{
+    width: 150px;
+    background-color: var(--light-black);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border: 0;
+    padding: 10px 5px !important;
+    transition: all .5s ease;
+    font-family: "Work Sans",sans-serif;
+    position: relative;
+    border-radius: 50px;
+    margin-bottom: 0%;
+   
+    
+}
+
+#entiresections  .allboxes .boxes button:hover{
+  
+    background-color: var(--green);
+}
+#entiresections #accelerate{
+    font-family: "Luckiest Guy",cursive;
+   
+    
+    color: var(--light-black);
+    margin-top:8rem;
+   
+
+}
+#entiresections #accelerate h4{
+    text-align: center;
+    font-size: 32px;
+}
+#entiresections #accelerate  .brands{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+#entiresections #accelerate  .brands div>p{
+    font-family: "Work Sans",sans-serif;
+  
+    font-size: 16px;
+    font-weight: 300;
+    
+   
+    
+}
+
+@media (max-width:775px){
+    #entiresections  #herosection .navbar{
+       
+        margin:2.5% 01%;
+    }
+    
+   
+    #entiresections  #herosection .navbar .logo{
+        width: 500px;
+        justify-content: center;
+       margin-left: 25%;
+        
+    }
+    #entiresections  #herosection .navbar #mobile{
+        display: flex;
+      
+        cursor: pointer;
+        font-size: 1.25rem;
+   
+        color: white;
+        background-color: var(--light-black);
+        padding:12px 14px;
+        border-radius: 12px;
+    }
+    #entiresections  #herosection .navbar  ul{
+        display: none;
+    
+    }
+    #entiresections  #herosection .mainhero{
+        width: 90%;
+         margin:8% 0%;
+         text-align: center;
+        
+     flex-direction: column-reverse;
+     }
+     #entiresections  #herosection .mainhero #rightdata img{
+        height: 65vh;
+        width: 100%;
+        margin-left: 0%;
+      
+     }
+     #entiresections  #herosection .mainhero #leftdata{
+        width: 85%;
+        /* border: 2px solid black; */
+      margin-top: 12%;
+    }
+    #entiresections  #herosection .mainhero #rightdata{
+        width: 85%;
+        text-align: center;
+
+  
+    }
+    #entiresections #solutions  .allboxes {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0 4%;
+        
+        
+       
+    }
+   
+    #entiresections #solutions  .allboxes .active {
+        display: none;
+        
+        
+        
+       
+    }
+   #entiresections #solutions .allboxes .boxes{
+    width: 86%;
+   }
+    #entiresections  #herosection .mainhero #leftdata .maintext {
+        font-size: 7vw;
+        
+        
+    }
+    #entiresections #trusted{
+        
+        font-size: 5.5vw;
+      
+        
+    }
+    #entiresections #solutions #mobile{
+       display: block;
+        width: 100%;
+ text-align: center;
+       margin-top: 50px;
+       justify-content: center;
+       align-items: center;
+      
+        }
+    #entiresections #solutions #mobile  span{
+        
+        justify-content: center;
+        align-items: center;
+        
+    }
+   
+}
+@media (max-width:350px){
+    #entiresections  #herosection .navbar{
+        margin-top: 4.5%;
+    }
+    #entiresections  #herosection .navbar .logo{
+        width: 800px;
+        justify-content: center;
+       margin-left: 25%;
+       
+        
+    }
+#entiresections  #herosection .mainhero #leftdata .upperpart{
+font-size: 11px;
+width: 110px;
+height: 13px;
+padding: 8px 16px;
+}
+#entiresections  #herosection .mainhero #rightdata img{
+   
+    height: 95%;
+    
+ }
+ #entiresections #solutions .allboxes .boxes{
+    width: 84%;
+    padding: 1rem;
+    
+}
+ #entiresections #solutions  .allboxes{
+
+    margin: 0 2%;
+    
+    
+    
+   
+}
+}
