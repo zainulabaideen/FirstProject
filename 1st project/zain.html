@@ -16,19 +16,19 @@
 <body>
     <div class="entiresite">
         <!-- navbar -->
-        <nav>
+        <nav class="navbar">
 
             <div id="logo"><img src="assets/Logo.png" alt="" id="logoimg"></div>
 
             <div class="primarydata">
-                <div class="navtop">
+                <div class="navtop" id="navtop">
                     <ul>
                         <li><a href="gmail"><span> <i class="fa fa-thin fa-envelope-open"></i></span>
                                 support@gmail.com</a></li>
                         <li><a href="number"><span><i class="fa fa-light fa-phone"></i></span> +92300000000</a></li>
                     </ul>
                     <div>
-                        <a href=""> <i class="fa fa-light fa-right-from-bracket"></i><span>Login</span></a>
+                        <a href=""> <i class="fa fa-solid fa-right-from-bracket"></i><span>Login</span></a>
                         <a href=""><i class="fa fa-light fa-facebook"></i></a>
                         <a href=""><i class="fa fa-light fa-twitter"></i></a>
                         <a href=""><i class="fa fa-light fa-pinterest"></i></a>
@@ -40,7 +40,7 @@
                 <div class="bottomlinks" id="links">
 
 
-                    <div class="navlinks">
+                    <div class="navlinks  ">
                         <ul>
                             <a href="">
                                 <li>Home</li>
@@ -49,7 +49,31 @@
                                 <li>Shop</li>
                             </a>
                             <a href="">
-                                <li>Products</li>
+                                <li>
+                                    <div class="dropdown">
+                                        <span>Products</span> <i class="fa fa-light fa-chevron-down"></i>
+                                        <div class="dropdown-content">
+                                            <ul class="dropdownelements">
+                                                <a href="">
+                                                    <li>Home and Kitchen</li>
+                                                </a>
+                                                <a href="">
+                                                    <li>Pet Supplies</li>
+                                                </a>
+                                                <a href="">
+                                                    <li>Garden And Outdoor</li>
+                                                </a>
+                                                <a href="">
+                                                    <li>Stationary</li>
+                                                </a>
+                                                <a href="">
+                                                    <li>Toys</li>
+                                                </a>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
                             </a>
                             <a href="">
                                 <li>Contact Us</li>
@@ -61,7 +85,7 @@
                                 <li>FAQ</li>
                             </a>
 
-
+                            <a href="" id="close"><i class="fa fa-solid fa-xmark"></i></a>
                         </ul>
                     </div>
                     <div class="navicons">
@@ -76,9 +100,11 @@
                         <div class="icons">
                             <a href=""> <i class="fa fa-thin fa-cart-shopping"></i></a>
                             <a href=""><i class="fa fa-thin fa-magnifying-glass"></i></a>
-                            <i class="fa fa-bars" id="bar"></i>
+                            <i class="fa fa-bars hamburger-lines" id="bar"></i>
 
                         </div>
+
+
                     </div>
                 </div>
 
@@ -87,82 +113,170 @@
 
 
 
-<img src="assets/Logo.png" alt="" width="100%">
+        <!-- slider -->
+        <div class="slider">
+            <div class="list">
+                <div class="item">
+                    <img src="assets/pets.jpg" alt="">
+                    <!-- <div>
+                <h4>Pet Supplies</h4>
+                <p>Wide Variety of Pet Suppliers</p>
+                <button>Shop Now</button>
+            </div> -->
+                </div>
+                <div class="item">
+                    <img src="assets/toys.jpg" alt="">
+                    <!-- <div>
+                <h4>Do You Want Toys?</h4>
+                <p>The best new toys that kids like</p>
+                <button>Shop Now</button>
+            </div> -->
+                </div>
+                <div class="item">
+                    <img src="assets/kitchen.jpg" alt="">
+                    <!-- <div>
+                <h4>Do You Want Toys?</h4>
+                <p>The best new toys that kids like</p>
+                <button>Shop Now</button>
+            </div> -->
+                </div>
+                <div class="item">
+
+                    <img src="assets/garden.jpg" alt="">
+                    <!-- <div>
+                <h4>Do You Want Toys?</h4>
+                <p>The best new toys that kids like</p>
+                <button>Shop Now</button>
+            </div> -->
+                </div>
+
+            </div>
+            <div class="buttons">
+                <button id="prev">
+                    </button>
+                        <button id="next">></button>
+            </div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+
+        <!-- Brands  -->
+        <div class="brands">
+            <p id="brandtitle">Our Brands</p>
+            <p>We maintain the highest level of online payment security with complete encryption and data security
+                solutions to protect customer data</p>
+
+
+
+
+            <div id="brandimages">
+
+                <marquee behavior="" direction="right" scrollamount="12">
+                    <img src="assets/brand1.PNG" alt="">
+                    <img src="assets/brand2.PNG" alt="">
+                    <img src="assets/brand3.PNG" alt="">
+                    <img src="assets/brand4.PNG" alt="">
+                    <img src="assets/brand3.PNG" alt="">
+                    <img src="assets/brand4.PNG" alt="">
+                    <img src="assets/brand2.PNG" alt="">
+
+                </marquee>
+            </div>
+        </div>
+
+<!-- Popular Products -->
+<div class="popularProducts">
+    <p id="producttitle">Popular Products</p>
+</div>
 
         <!-- footer  -->
         <hr>
         <footer>
-<div class="col1 col">
-            <img src="assets/Logo.png" alt="" srcset="" class="footer_img">
-            <p>Zyndex is an enchanting and easy to use e-Commerce website that allows users to buy online products at
-                their door steps</p>
-            <p>
-                <span><i class="fa-solid fa-location-dot"></i></span> Unit D3, 579 Prescot Road Old Swan LiverPool
-                England L13 5UX
-            </p>
-            <p>
-                <span><i class="fa fa-thin fa-envelope-open"></i></span> support@klixzi.co.uk
-            </p>
-            
-            <p><span><i class="fa fa-light fa-phone"></i></span>  +92300000000</p>
-            <div class="socials">
-                <a href=""class="social"><i class="fa fa-light fa-facebook"></i></a>
-                <a href=""class="social"><i class="fa fa-light fa-twitter"></i></a>
-                <a href=""class="social"><i class="fa fa-light fa-pinterest"></i></a>
-                <a href=""class="social"><i class="fa fa-light fa-vimeo"></i></a>
+            <div class="col1 col">
+                <img src="assets/Logo.png" alt="" srcset="" class="footer_img">
+                <p>Zyndex is an enchanting and easy to use e-Commerce website that allows users to buy online products
+                    at
+                    their door steps</p>
+                <p>
+                    <span><i class="fa-solid fa-location-dot"></i></span> Unit D3, 579 Prescot Road Old Swan LiverPool
+                    England L13 5UX
+                </p>
+                <p>
+                    <span><i class="fa fa-thin fa-envelope-open"></i></span> support@klixzi.co.uk
+                </p>
+
+                <p><span><i class="fa fa-light fa-phone"></i></span> +92300000000</p>
+                <div class="socials">
+                    <a href="" class="social"><i class="fa fa-light fa-facebook"></i></a>
+                    <a href="" class="social"><i class="fa fa-light fa-twitter"></i></a>
+                    <a href="" class="social"><i class="fa fa-light fa-pinterest"></i></a>
+                    <a href="" class="social"><i class="fa fa-light fa-vimeo"></i></a>
+
+                </div>
 
             </div>
-
-    </div>
-    <div class="ccol samecol">
-        <h4>Useful Links</h4>
-      <p>
-        <a href="">
-            <i class="fa fa-light fa-chevron-right"></i><span>Contact Us</span>   
-        </a>
-    </p>
-    <p>
-        <a href="">
-            <i class="fa fa-light fa-chevron-right"></i><span>My Account</span>
-        </a>
-    </p>
-    <p>
-        <a href="">
-            <i class="fa fa-light fa-chevron-right"></i><span>Cart</span>
-        </a>
-    </p>
-    </div>
-
-    <div class="samecol col">
-        <h4>Information</h4>
-       <p>
-        <a href="">
-            <i class="fa fa-light fa-chevron-right"></i><span>Privacy Policy</span>
-        </a>
-    </p>
-    <p>
-        <a href="">
-            <i class="fa fa-light fa-chevron-right"></i><span>Terms And Conditions</span>
-        </a>
-    </p>
-    <p>
-        <a href="">
-            <i class="fa fa-light fa-chevron-right"></i><span>About Us</span>
-        </a>
-    </p>
-    </div>
-    <div class="col4 col">
-        <h4>Newsletter</h4>
-       <p> Keep up on our always evolving product features and technology.</p>
-       <div class="input">
-                <input type="text" placeholder="Enter your email"> <button><i class="fa fa-light fa-telegram"></i></button>
-            </div>
+            <div class="ccol samecol">
+                <h4>Useful Links</h4>
+                <p>
+                    <a href="">
+                        <i class="fa fa-light fa-chevron-right"></i><span>Contact Us</span>
+                    </a>
+                </p>
+                <p>
+                    <a href="">
+                        <i class="fa fa-light fa-chevron-right"></i><span>My Account</span>
+                    </a>
+                </p>
+                <p>
+                    <a href="">
+                        <i class="fa fa-light fa-chevron-right"></i><span>Cart</span>
+                    </a>
+                </p>
             </div>
 
-    </footer>
+            <div class="samecol col">
+                <h4>Information</h4>
+                <p>
+                    <a href="">
+                        <i class="fa fa-light fa-chevron-right"></i><span>Privacy Policy</span>
+                    </a>
+                </p>
+                <p>
+                    <a href="">
+                        <i class="fa fa-light fa-chevron-right"></i><span>Terms And Conditions</span>
+                    </a>
+                </p>
+                <p>
+                    <a href="">
+                        <i class="fa fa-light fa-chevron-right"></i><span>About Us</span>
+                    </a>
+                </p>
+            </div>
+            <div class="col4 col">
+                <h4>Newsletter</h4>
+                <p> Keep up on our always evolving product features and technology.</p>
+                <div class="input">
+                    <input type="text" placeholder="Enter your email"> <button>
+                        <i class="fa fa-light fa-telegram"></i></button>
+                </div>
+            </div>
+
+        </footer>
+
+
+
+
+
 
     </div>
+
 </body>
-<script src="zain.js"></script>
+<script src="zain.js" defer></script>
 
 </html>
