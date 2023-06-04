@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300;400;700&family=Luckiest+Guy&family=Montserrat:wght@300;400;500;600;700&family=Work+Sans:ital,wght@0,600;1,300&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css');
 
-body{
-/* overflow-x: hidden; */
 
-}
 .entiresite{
     --skyblue:#68C9DC;
     --purple:#D761DC;
@@ -15,6 +12,12 @@ body{
     --light-green:#04d39f;
     --red:#DD3333;
     --light-grey:#323232;
+}
+.entiresite a{
+    text-decoration: none;
+}
+.entiresite ul{
+    list-style: none;
 }
 
 /* navbar */
@@ -36,9 +39,8 @@ top: 0;
     
 }
 
-.entiresite nav a{
-    text-decoration: none;
-
+.responsivenav{
+    display: none;
 }
 .entiresite nav #mobile{
     display: none;
@@ -65,7 +67,6 @@ top: 0;
 display: flex;
 flex-wrap: wrap;
 min-height: 15px;
-/* margin-top: -6px; */
    justify-content: space-between;
    align-items: center;
 background-color: var(--skyblue) ;
@@ -156,7 +157,7 @@ flex-direction: column;
     transition: all 0.1s ease-in-out ;
     font-size: 12px;
   }
-
+  
 .entiresite nav .primarydata .navlinks .navicons a i{
     color: var(--light-black) ;
     cursor: pointer;
@@ -197,117 +198,6 @@ flex-direction: column;
 .entiresite nav .primarydata .bottomlinks .navicons a i:hover{
    color: var(--orange);
     cursor: pointer;
-}
-@media (max-width:978px){
-    .entiresite nav{
-        left: 0;
-        right: 0;
-        width: 90%;
-    }
-    .nav .navlinks  {
-        position: fixed;
-        left: -100%;
-        top: 5rem;
-        flex-direction: column;
-        background-color: #fff;
-        width: 100%;
-        border-radius: 10px;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
-    }
-
-    .navlinks .active {
-        left: 0;
-    }
-    .navlinks li{
-        margin-bottom: 25px;
-
-    }
-    #close{
-        display: flex;
-        position: absolute;
-        top: 30px;
-        left: 30px;
-        color: var(--text-color);
-        font-size: 24px;
-    }
-
-    .entiresite nav #mobile{
-        display: flex;
-      margin-left: 0%;
-        cursor: pointer;
-        
-        color: var(--light-black);
-       justify-content: space-between;
-    }
-    .entiresite nav #mobile .icons{
-        margin-right:1.2rem
-        
-    }
-    .entiresite nav #mobile .icons i{
-        font-size: 1.1rem;
-        font-weight: 300;
-        color: var(--light-black);
-        margin-right:0.6rem
-    }
-    .entiresite nav #mobile .icons i:hover{
-        color:var(--orange) ;
-        cursor: pointer;
-    }
-    .entiresite nav .primarydata .navlinks {
-        display: none;
-    
-    }
-    .entiresite nav .primarydata .navicons{
-        display: none;
-    }
-    .entiresite nav .primarydata .navtop{
-        width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    min-height: 15px;
-       justify-content: center;
-       align-items: center;
-    background-color: var(--skyblue) ;
-    font-size: 13px;
-    padding-bottom: 12px;
-    margin-left: 0;
-    margin-right: 0;
-    }
-    .entiresite nav #logo{
-       display: none;
-    
-     
-    }
-    .entiresite nav .primarydata{
-        width: 100%;
-    } 
-    .entiresite nav .primarydata .navlinks{
-        width: 0%;
-    
-    }
-    .entiresite nav .primarydata .bottomlinks #logo2{
-      position: relative;
-        display: flex;
-        width:40%;  
-        height:90px; 
-        /* border: 2px solid black; */
-        align-items: center;
-        margin-left: 1rem;
-       
-    }
-    .entiresite nav .primarydata .bottomlinks #logo2 img{
-       display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 65%;
-
-    }
-}
-#close{
-    display: none;
 }
 
 
@@ -583,57 +473,11 @@ line-height: 1.7;
 
 
 
-@media (max-width:837px){
-    .entiresite footer {
-       grid-template-columns: repeat(2, 1fr);
 
-    }
-    .entiresite .popularProducts .allboxes{
-      
-        grid-template-columns: repeat(2,1fr);
-        }
-
-
-
-}
-@media (max-width:720px){
-    .entiresite footer {
-       grid-template-columns: repeat(1, 1fr);
-        margin-left: 4rem;
-    }
-    .entiresite .popularProducts .allboxes{
-      
-        grid-template-columns: repeat(1,1fr);
-        }
-
-    .entiresite footer .footer_img{
-        display: flex;
-        width: 230px;
-        height: 170px;
-
-        justify-content: center;
-        
-    }
-    .entiresite nav .primarydata .bottomlinks #logo2 img{
-         width: 100%;
- 
-     }
-}
-@media (max-width:550px){
-
-    .entiresite footer .footer_img{
-        display: flex;
-        width: 60%;
-        height: 170px;
-
-        justify-content: center;
-        
-    }
-}
 .entiresite .contactlogo{
     position: fixed;
    top: 85%;
-   left: 90%;
+   left: 80%;
     z-index: 900;
     width: 80px;
     height: 80px;
@@ -681,6 +525,65 @@ scale: 1.1;
 
 
 }
+.entiresite .messanger{
+    position: fixed;
+    top: 18.8%;
+    left: 78%;
+     min-height: 300px;
+     max-height: fit-content;
+     background-color: #f5fadc;
+     box-shadow: 5px 5px rgb(214, 214, 214);
+     line-height: 2;
+     
+     overflow: hidden;
+ }
+ 
+ .entiresite .messanger .firstmessage{
+     position: relative;
+     height: 50px;
+     width:fit-content;
+     margin: 25px 25px;
+     background: #ffffff;
+     border-radius: 20px;
+     z-index: 200;
+ }
+ .entiresite .messanger p{
+     position: relative;
+     padding: 5px 25px;
+     
+ }
+ .entiresite .messanger .messangerfooter{
+ position: relative;
+ padding: 12px 15px;
+ background: #f0f0f0;
+ margin-top: 90%;
+
+ width: 100%;
+ }
+ .entiresite .messanger .messangerfooter .btn{
+     background-color: var(--orange);
+     color: white;
+     margin-left: 7px;
+     padding: 7px 7px ;
+     cursor: pointer;
+     font-size: 14px;
+     border-radius: 8px;
+     border-color: #ffca75;
+ }
+ .entiresite .messanger .messangerfooter input{
+     width: 170px;
+     padding: 7px 4px ;
+     border-color: white;
+ 
+ }
+ .entiresite .messanger i{
+    position: relative;
+     font-size: 20px;
+     color: black;
+     padding-left: 91%;
+     cursor: pointer;
+ }
+ 
 
 
 /* toys */
@@ -781,5 +684,207 @@ color: var(--skyblue);
         display: flex ;
        flex-direction: column;
       
+    }
+}
+@media (max-width:837px){
+    .entiresite footer {
+       grid-template-columns: repeat(2, 1fr);
+
+    }
+    .entiresite .popularProducts .allboxes{
+      
+        grid-template-columns: repeat(2,1fr);
+        }
+        .entiresite .messanger{
+            position: fixed;
+            top: 28.8%;
+            left: 60%;
+             min-height: 250px;
+             line-height: 1;
+             border-radius: 15px;
+           
+         }
+         
+         .entiresite .messanger .firstmessage{
+             position: relative;
+             height: 50px;
+             width:fit-content;
+             margin: 5px 5px;
+             background: #ffffff;
+             border-radius: 20px;
+             z-index: 200;
+         }
+
+
+}
+@media (max-width:720px){
+    .entiresite footer {
+       grid-template-columns: repeat(1, 1fr);
+        margin-left: 4rem;
+    }
+    .entiresite .popularProducts .allboxes{
+      
+        grid-template-columns: repeat(1,1fr);
+        }
+
+    .entiresite footer .footer_img{
+        display: flex;
+        width: 230px;
+        height: 170px;
+
+        justify-content: center;
+        
+    }
+    .entiresite nav .primarydata .bottomlinks #logo2 img{
+         width: 100%;
+ 
+     }
+}
+@media (max-width:550px){
+
+    .entiresite footer .footer_img{
+        display: flex;
+        width: 60%;
+        height: 170px;
+
+        justify-content: center;
+        
+        
+    }
+    .entiresite .messanger{
+        position: fixed;
+        top: 28.8%;
+        left: 30%;
+         min-height: 250px;
+         line-height: 1;
+         border-radius: 15px;
+       
+     }
+}
+@media (max-width:978px){
+    .entiresite nav{
+        left: 0;
+        right: 0;
+        width: 100%;
+        position: absolute;
+    }
+    
+    .entiresite .responsivenav a{
+        color: var(--orange);
+    } 
+    .entiresite .responsivenav{
+        display: block;
+        position: relative;
+          margin-top: 0px;
+         top: 142px;
+          width: 100%;
+          min-height: 100px;
+          max-height: fit-content;
+          box-shadow:
+          0 10px 27px rgba(0, 0, 0, 0.05);
+        transition: 0.3s;
+        /* z-index: 10; */
+        margin-bottom: 180px;
+        overflow: hidden;
+
+        }
+        .entiresite .slider{
+            margin-top: 150px;
+        }
+
+        #cross{
+            display: none;
+        }
+        .entiresite .responsivenav .resnavlinks ul li{
+            color: var(--light-grey);
+          margin-top: 3rem;
+          border-bottom: 1px solid var(--dark-grey);
+        }
+        #cross .active{
+          display: none;
+        }
+        #bar.active{
+          display: none;
+        }
+      
+    .navlinks .active {
+        left: 0;
+    }
+    .navlinks li{
+        margin-bottom: 25px;
+
+    }
+ 
+
+    .entiresite nav #mobile{
+        display: flex;
+      margin-left: 0%;
+        cursor: pointer;
+        
+        color: var(--light-black);
+       justify-content: space-between;
+    }
+    .entiresite nav #mobile .icons{
+        margin-right:1.2rem
+        
+    }
+    .entiresite nav #mobile .icons i{
+        font-size: 1.1rem;
+        font-weight: 300;
+        color: var(--light-black);
+        margin-right:0.6rem
+    }
+    .entiresite nav #mobile .icons i:hover{
+        color:var(--orange) ;
+        cursor: pointer;
+    }
+    .entiresite nav .primarydata .navlinks {
+        display: none;
+    
+    }
+    .entiresite nav .primarydata .navicons{
+        display: none;
+    }
+    .entiresite nav .primarydata .navtop{
+       
+        width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 15px;
+       justify-content: center;
+       align-items: center;
+    background-color: var(--skyblue) ;
+    font-size: 13px;
+    padding-bottom: 12px;
+    margin-left: 0;
+    margin-right: 0;
+    }
+    .entiresite nav #logo{
+       display: none;
+    
+     
+    }
+    .entiresite nav .primarydata{
+        width: 100%;
+    } 
+    .entiresite nav .primarydata .navlinks{
+        width: 0%;
+    
+    }
+    .entiresite nav .primarydata .bottomlinks #logo2{
+      position: relative;
+        display: flex;
+        width:40%;  
+        height:90px; 
+        align-items: center;
+        margin-left: 1rem;
+       
+    }
+    .entiresite nav .primarydata .bottomlinks #logo2 img{
+       display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 65%;
+
     }
 }

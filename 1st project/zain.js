@@ -4,23 +4,64 @@ var navlinks=document.getElementById('links');
 
 var logoimage=document.getElementById('logoimg');
 var navbar=document.querySelector("nav");
+var messagesender=document.getElementById("userresponse");
+var sendbtn=document.getElementById("send");
+var textinput=document.getElementById("inputtext");
+const messangediv=document.getElementById('messangebox');
+const closenav=document.getElementById('cross');
 
-const bar=document.getElementById('bar');
-const close=document.getElementById('close');
+const allbars=document.getElementById('bar');
+const closebtn=document.getElementById('closing');
+var messanger=document.getElementById("mess");
+var contactlogo=document.getElementById("contact");
+var responsive=document.getElementById("resnav");
+var responsives=document.getElementById("new");
+var navredata=document.getElementById("data");
+var ull=document.getElementById("ul");
+
+
+ull.style.display="none"
+
+let a=1;
+navredata.addEventListener("click",()=>{
+a++;
+
+if(a%2===0){
+ull.style.display="none"
+}
+else{
+ull.style.display="block"
+
+}
+
+    
+})
 //nav
-if(bar){
-    bar.addEventListener('click',()=>{
-        navbar.classList.add('active')
-    })
-}
-if(close){
-    close.addEventListener('click',()=>{
-        navbar.classList.remove('active')
-    })
-}
+responsive.style.display="none";
 
+allbars.addEventListener("click",()=>{
+    allbars.style.display="none";
+    closenav.style.display="inline-block";
+    responsive.style.display="block";
+    
+})
+closenav.addEventListener("click",()=>{
+    allbars.style.display="inline-block"
+    closenav.style.display="none";
+    responsive.style.display="none";
 
+})
 
+messanger.style.display="none";
+contactlogo.addEventListener("click",()=>{
+    contactlogo.style.display="none";
+    messanger.style.display="block";
+
+})
+closebtn.addEventListener("click",()=>{
+    contactlogo.style.display="flex";
+    messanger.style.display="none";
+})
 
 function changeCss () {
    if(scrollY > 70){
@@ -90,3 +131,8 @@ dots.forEach((li, key) => {
 window.onresize = function(event) {
     reloadSlider();
 };
+function messagesended() {
+    messagesender.innerText=textinput.value;
+}
+
+sendbtn.addEventListener('click',messagesended);
