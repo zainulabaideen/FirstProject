@@ -96,6 +96,7 @@ font-size: 13px;
     align-items: center;
     justify-content: space-between;
     margin-right: 1.4rem;
+    font-size: 16px;
 }
 .entiresite nav .primarydata .navtop  a span{
     margin-right: 0.5rem;
@@ -124,7 +125,7 @@ flex-direction: column;
   }
   .dropdownelements li{ 
  padding-top: 16px;
- font-size: 12px;
+ font-size: 15px;
   }
  
   .dropdown span{
@@ -158,7 +159,7 @@ flex-direction: column;
 .entiresite nav .primarydata .navlinks .navicons a i{
     color: var(--light-black) ;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 15px;
 }
 .entiresite nav .primarydata .navlinks .navicons a i:hover{
     color: var(--orange);
@@ -350,26 +351,30 @@ flex-direction: column;
 }
 .entiresite footer .col1 .socials{
     display: flex;
+    margin-top: 30px;
    
 }
 .entiresite footer .col1 .social{
-width: 22px;
-height: 22px;
+width: 24px;
+height: 24px;
 border: 2px solid var(--dark-grey);
 display: flex;
 justify-content: center;
 align-items: center;
-margin-left: 0.3rem;
+margin-left: 0.4rem;
+font-size:17px ;
 }
 .entiresite footer .col1 p i{
     color:var(--light-green);
     margin-right: 10px;
+    font-size: 16px;
 }
 .entiresite footer .samecol  i{
 margin-right: 10px;
+font-size: 18px;
 
 }
-.entiresite footer .samecol  i:hover{
+.entiresite footer .samecol p:hover i{
     transform: translateX(10px);
     transition: all.3s ease-in-out;
     
@@ -380,7 +385,8 @@ margin-right: 10px;
     .entiresite footer .col4 input{
         width: 70%;
         height: 36px;
-        border:1px solid rgb(212, 212, 212)
+        border:1px solid rgb(212, 212, 212);
+        padding-left: 18px;
     }
     .entiresite footer .col4 button{
         width:40px;
@@ -394,7 +400,12 @@ margin-right: 10px;
         align-items: center;
     }
 
+
+
+
 /* slider  */
+
+
 .entiresite .slider{
     top: -50px;
     width: 1300px;
@@ -433,6 +444,10 @@ font-size: 26px;
     width: 90%;
     display: flex;
     justify-content: space-between;
+    font-size: 16px;
+}
+.entiresite .slider .buttons button:hover{
+    cursor: pointer;
 }
 .entiresite .slider .buttons button{
     width: 50px;
@@ -477,7 +492,11 @@ font-size: 26px;
     }
 }
 
+
+
 /* Brands */
+
+
 .entiresite .brands h5{
     font-size: 2.6rem;
     font-family: 'Montserrat', sans-serif;
@@ -511,6 +530,9 @@ overflow-x: hidden;
 padding-left: 100px;
 }
 
+
+/* popularProducts */
+
 .entiresite .popularProducts #producttitle{
     margin-top: 7%;
     font-size: 2.5rem;
@@ -522,11 +544,12 @@ padding-left: 100px;
 display: grid;
 grid-template-columns: repeat(3,1fr);
 overflow-x: hidden;
-grid-row: 1rem;
+row-gap: 2rem;
 }
 .entiresite .popularProducts .allboxes img{
     width: 70px;
     height: 70px;
+    margin-right: 25px;
 }
 .entiresite .popularProducts .allboxes .productboxes{
     display: flex;
@@ -535,16 +558,19 @@ grid-row: 1rem;
 .entiresite .popularProducts .allboxes .productboxes div{
     display: flex;
     flex-direction: column;
+    margin-right: 15px;
 }
 .entiresite .popularProducts .allboxes a{
-    font-size: 14px;
+    font-size: 15px;
     font-family: 'Lato';
 color: var(--light-black);
 text-decoration: none;
+line-height: 1.7;
+
 
 }
 .entiresite .popularProducts .allboxes a:hover{
-    color: var(--orange);
+    color: var(--skyblue);
 }
 .entiresite .popularProducts .allboxes p{
     flex-direction: row;
