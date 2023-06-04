@@ -606,3 +606,54 @@ text-decoration: none;
         
     }
 }
+.entiresite .contactlogo{
+    position: fixed;
+   top: 85%;
+   left: 90%;
+    z-index: 900;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 2px solid rgb(179, 179, 179);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(252, 252, 252);
+    box-shadow: 10px 5px rgb(168, 168, 168);
+}
+.entiresite .contactlogo img{
+   position: relative;
+    width: 60px;
+    height: 60px;
+    
+    cursor: pointer;
+    
+}
+.entiresite .contactlogo:hover img{
+    margin-right: 130px;
+    
+}
+.entiresite .contactlogo:hover{
+scale: 1.1;
+}
+.entiresite .contactlogo:hover::before{
+    content: "Contact Us";
+    position: relative;
+    min-width: 120px;
+    max-width: fit-content;
+    height: 30px;
+    padding: 3px 5px;
+    background-color: #fff;
+    color: var(--light-black);
+    right:27%;
+    border: 2px solid var(--dark-grey);
+    font-size: 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
