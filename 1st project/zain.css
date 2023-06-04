@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Luckiest+Guy&family=Montserrat:wght@300;400;500;600;700&family=Work+Sans:ital,wght@0,600;1,300&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css');
 
+body{
+/* overflow-x: hidden; */
 
+}
 .entiresite{
     --skyblue:#68C9DC;
     --purple:#D761DC;
@@ -11,7 +14,6 @@
     --dark-grey:#969696;
     --light-green:#04d39f;
     --red:#DD3333;
-/* overflow-x: hidden; */
 }
 
 /* navbar */
@@ -69,9 +71,11 @@ background-color: var(--skyblue) ;
 font-size: 13px;
 
 }
-.entiresite nav .primarydata .topnav{
-    display: none;
-}
+.entiresite nav .primarydata .navtop  a #logout{
+    padding-right: 10px;
+    font-size: 15px;
+    }
+
 .entiresite nav .primarydata .navtop a{
     color: white;
 }
@@ -126,7 +130,10 @@ flex-direction: column;
   .dropdown span{
     color: black;
   }
-  
+  .dropdown .fa-chevron-down {
+    color: black;
+
+  }
   .dropdown span:hover{
     color: var(--orange);
   }
@@ -193,7 +200,7 @@ flex-direction: column;
     .entiresite nav{
         left: 0;
         right: 0;
-        width: 100%;
+        width: 90%;
     }
     .nav .navlinks  {
         position: fixed;
@@ -227,7 +234,7 @@ flex-direction: column;
 
     .entiresite nav #mobile{
         display: flex;
-      margin-left: 10%;
+      margin-left: 0%;
         cursor: pointer;
         
         color: var(--light-black);
@@ -386,45 +393,6 @@ margin-right: 10px;
         justify-content: center;
         align-items: center;
     }
-@media (max-width:837px){
-    .entiresite footer {
-       grid-template-columns: repeat(2, 1fr);
-
-    }
-
-
-
-}
-@media (max-width:720px){
-    .entiresite footer {
-       grid-template-columns: repeat(1, 1fr);
-        margin-left: 4rem;
-    }
-
-    .entiresite footer .footer_img{
-        display: flex;
-        width: 230px;
-        height: 170px;
-
-        justify-content: center;
-        
-    }
-    .entiresite nav .primarydata .bottomlinks #logo2 img{
-         width: 100%;
- 
-     }
-}
-@media (max-width:550px){
-
-    .entiresite footer .footer_img{
-        display: flex;
-        width: 60%;
-        height: 170px;
-
-        justify-content: center;
-        
-    }
-}
 
 /* slider  */
 .entiresite .slider{
@@ -549,4 +517,92 @@ padding-left: 100px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     text-align: center;
+}
+.entiresite .popularProducts .allboxes{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+overflow-x: hidden;
+grid-row: 1rem;
+}
+.entiresite .popularProducts .allboxes img{
+    width: 70px;
+    height: 70px;
+}
+.entiresite .popularProducts .allboxes .productboxes{
+    display: flex;
+    flex-direction: row;
+}
+.entiresite .popularProducts .allboxes .productboxes div{
+    display: flex;
+    flex-direction: column;
+}
+.entiresite .popularProducts .allboxes a{
+    font-size: 14px;
+    font-family: 'Lato';
+color: var(--light-black);
+text-decoration: none;
+
+}
+.entiresite .popularProducts .allboxes a:hover{
+    color: var(--orange);
+}
+.entiresite .popularProducts .allboxes p{
+    flex-direction: row;
+    color: var(--orange);
+    font-weight: 700;
+}
+
+.entiresite .popularProducts .allboxes .price{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+@media (max-width:837px){
+    .entiresite footer {
+       grid-template-columns: repeat(2, 1fr);
+
+    }
+    .entiresite .popularProducts .allboxes{
+      
+        grid-template-columns: repeat(2,1fr);
+        }
+
+
+
+}
+@media (max-width:720px){
+    .entiresite footer {
+       grid-template-columns: repeat(1, 1fr);
+        margin-left: 4rem;
+    }
+    .entiresite .popularProducts .allboxes{
+      
+        grid-template-columns: repeat(1,1fr);
+        }
+
+    .entiresite footer .footer_img{
+        display: flex;
+        width: 230px;
+        height: 170px;
+
+        justify-content: center;
+        
+    }
+    .entiresite nav .primarydata .bottomlinks #logo2 img{
+         width: 100%;
+ 
+     }
+}
+@media (max-width:550px){
+
+    .entiresite footer .footer_img{
+        display: flex;
+        width: 60%;
+        height: 170px;
+
+        justify-content: center;
+        
+    }
 }
