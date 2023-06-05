@@ -244,6 +244,7 @@ flex-direction: column;
 .entiresite footer .col1 .socials{
     display: flex;
     margin-top: 30px;
+    
    
 }
 .entiresite footer .col1 .social{
@@ -255,6 +256,7 @@ justify-content: center;
 align-items: center;
 margin-left: 0.4rem;
 font-size:17px ;
+padding-right: 5px;
 }
 .entiresite footer .col1 p i{
     color:var(--light-green);
