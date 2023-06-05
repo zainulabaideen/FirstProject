@@ -162,9 +162,7 @@ flex-direction: column;
     color: var(--light-black) ;
     cursor: pointer;
     font-size: 15px;
-}
-.entiresite nav .primarydata .navlinks .navicons a i:hover{
-    color: var(--orange);
+    margin-left: 15px;
 }
 .entiresite nav .primarydata .navlinks{
     position: relative;
@@ -199,6 +197,10 @@ flex-direction: column;
    color: var(--orange);
     cursor: pointer;
 }
+ i{
+    margin-left: 8px;
+ }
+
 
 
 /* footer  */
@@ -206,7 +208,6 @@ flex-direction: column;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
    gap: 1.8rem;
-    /* text-align: center; */
     font-family: 'Lato', sans-serif; 
     font-size: 14px;
     color: var(--dark-grey);
@@ -354,8 +355,7 @@ font-size: 26px;
 .entiresite .slider .dots{
     position: absolute;
     bottom: 10px;
-    left: 0;
-    
+    left: 0; 
     width: 100%;
     margin: 0;
     padding: 0;
@@ -368,14 +368,12 @@ font-size: 26px;
     height: 10px;
     border: 1px solid var(--red);
     background-color: white;
-
     margin: 10px;
     border-radius: 20px;
     transition: 0.5s;
 }
 .entiresite .slider .dots li.active{
-    width: 30px;
-    
+    width: 30px; 
     background-color: var(--red);
 }
 
@@ -534,18 +532,23 @@ scale: 1.1;
      background-color: #f5fadc;
      box-shadow: 5px 5px rgb(214, 214, 214);
      line-height: 2;
-     
+   
      overflow: hidden;
  }
  
  .entiresite .messanger .firstmessage{
-     position: relative;
+   
+    position: relative;
      height: 50px;
      width:fit-content;
-     margin: 25px 25px;
+     margin: 25px 35px;
      background: #ffffff;
-     border-radius: 20px;
+     border-radius: 15px;
      z-index: 200;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     
  }
  .entiresite .messanger p{
      position: relative;
@@ -557,7 +560,6 @@ scale: 1.1;
  padding: 12px 15px;
  background: #f0f0f0;
  margin-top: 90%;
-
  width: 100%;
  }
  .entiresite .messanger .messangerfooter .btn{
@@ -580,7 +582,8 @@ scale: 1.1;
     position: relative;
      font-size: 20px;
      color: black;
-     padding-left: 91%;
+     padding-top: 15px;
+     padding-left: 89%;
      cursor: pointer;
  }
  
@@ -739,6 +742,9 @@ color: var(--skyblue);
          width: 100%;
  
      }
+     .entiresite .contactlogo{
+       left: 80%;
+     }
 }
 @media (max-width:550px){
 
@@ -751,6 +757,10 @@ color: var(--skyblue);
         
         
     }
+    
+    .entiresite .contactlogo{
+        left: 70%;
+      }
     .entiresite .messanger{
         position: fixed;
         top: 28.8%;
@@ -766,7 +776,7 @@ color: var(--skyblue);
         left: 0;
         right: 0;
         width: 100%;
-        position: absolute;
+        position: sticky;
     }
     
     .entiresite .responsivenav a{
@@ -776,14 +786,13 @@ color: var(--skyblue);
         display: block;
         position: relative;
           margin-top: 0px;
-         top: 142px;
+         top: 0px;
           width: 100%;
           min-height: 100px;
           max-height: fit-content;
           box-shadow:
           0 10px 27px rgba(0, 0, 0, 0.05);
         transition: 0.3s;
-        /* z-index: 10; */
         margin-bottom: 180px;
         overflow: hidden;
 

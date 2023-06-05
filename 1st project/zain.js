@@ -20,22 +20,8 @@ var navredata=document.getElementById("data");
 var ull=document.getElementById("ul");
 
 
-ull.style.display="none"
 
-let a=1;
-navredata.addEventListener("click",()=>{
-a++;
 
-if(a%2===0){
-ull.style.display="none"
-}
-else{
-ull.style.display="block"
-
-}
-
-    
-})
 //nav
 responsive.style.display="none";
 
@@ -63,9 +49,28 @@ closebtn.addEventListener("click",()=>{
     messanger.style.display="none";
 })
 
+
+// responsivenav 
+ull.style.display="none"
+
+let a=1;
+navredata.addEventListener("click",()=>{
+a++;
+
+if(a%2===0){
+ull.style.display="none"
+}
+else{
+ull.style.display="block"
+
+}
+
+    
+})
+// sticky nav 
 function changeCss () {
    if(scrollY > 70){
-   
+    allbars.style.display="none";
     topnav.style.display = "none";
     logobox.style.height="80px";
     logoimage.style.height="80px";
@@ -75,6 +80,7 @@ function changeCss () {
 
 
    }     else{
+    allbars.style.display="inline-block";
     topnav.style.display = "flex";
     logobox.style.height="100px";
     navbar.style.width="90%";
