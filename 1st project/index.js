@@ -69,7 +69,7 @@ ull.style.display="block"
 })
 // sticky nav 
 function changeCss () {
-   if(scrollY > 70){
+   if(scrollY >= 100){
     allbars.style.display="none";
     topnav.style.display = "none";
     logobox.style.height="80px";
@@ -85,6 +85,7 @@ function changeCss () {
     logobox.style.height="100px";
     navbar.style.width="90%";
     logoimage.style.height="100px";
+    navbar.style.width="100%";
 
     navlinks.style.justifyContent="space-between";
 
@@ -142,3 +143,20 @@ function messagesended() {
 }
 
 sendbtn.addEventListener('click',messagesended);
+
+
+
+// FAQs Bottom Portion
+function toggleAnswer(id) {
+    const answer = document.getElementById(`answer-${id}`);
+    answer.classList.toggle('show');
+}
+
+function toggleImages(id) {
+    const plusImg = document.getElementById(`plus-img-${id}`);
+    const minusImg = document.getElementById(`minus-img-${id}`);
+
+    plusImg.style.display = plusImg.style.display === 'none' ? 'inline' : 'none';
+    minusImg.style.display = minusImg.style.display === 'none' ? 'inline' : 'none';
+}
+
