@@ -637,7 +637,120 @@ color: var(--skyblue);
 
 }
 
+/* products  */
+.filteredproducts .producttitle{
+   
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-top: 3rem;
+    }
+    
+    .filteredproducts .subtitles ul{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        margin-right:50px;
+        flex-wrap: wrap;
+    }
+    .filteredproducts ul li{ 
+        margin:20px 30px;
+        font-family: 'Lato', sans-serif;
+        font-size: 18px;
+    
+    }
+    .filteredproducts ul li:hover{
+    cursor: pointer;
+    color:var(--orange) ;
+    }
+.products{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(4,1fr); */
+    overflow-x: hidden;
+    column-gap: 3rem;
+}
+.products img{
+    
+    width: 250px;
+    height: 200px;
+}
+.products img:hover{
+scale: 1.1;
+transition: all 0.2s ease;
+}
 
+.products .addtocart{
+
+
+    width:250px;
+    overflow:hidden ;
+    height: 30px;
+    opacity: 0;
+    text-align: center;
+    color: white;
+ 
+    opacity: 0;
+    background-color: black;
+    
+}
+div.btn{
+    position: relative;
+    bottom: 45px;
+    left: -29px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    opacity: 1;
+    text-align: center;
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+    z-index: 9;
+    font-size: 16px;
+    font-family: "Lato";
+}
+.products .data{
+    margin-bottom: 2rem;
+}
+.products .product:hover .addtocart {
+    opacity: 0.8;
+    transition: all .3s ease-out 0s;
+ 
+}
+.products .data .pretitle{
+    display: block;
+    color:var(--dark-grey);
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+.products .data .description{
+color: var(--light-black);
+font-family: 'Montserrat', sans-serif;
+font-size: 15px;
+cursor: pointer;
+text-decoration: none;
+line-height: 3;
+}
+.products .data .description:hover{
+    color: var(--orange);
+}
+.products .data .pricesection{
+    display: flex;
+    justify-content: space-between;
+}
+.products .data .pricesection i{
+color: var(--orange);
+} 
 
 /* services */
  .services{
