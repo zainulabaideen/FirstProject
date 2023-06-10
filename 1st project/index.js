@@ -18,8 +18,11 @@ var responsive=document.getElementById("resnav");
 var responsives=document.getElementById("new");
 var navredata=document.getElementById("data");
 var ull=document.getElementById("ul");
+var btnofcart=document.getElementById("cartbtn");
+var cartbtn=document.querySelectorAll(".addtocart");
 
 
+// cart 
 
 
 //nav
@@ -160,3 +163,11 @@ function toggleImages(id) {
     minusImg.style.display = minusImg.style.display === 'none' ? 'inline' : 'none';
 }
 
+
+cartbtn.addEventListener('click',()=>{
+ array.forEach(btn => {
+    btn.alert('hello'); 
+ });
+   
+ 
+})
