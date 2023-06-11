@@ -18,8 +18,6 @@ var responsive=document.getElementById("resnav");
 var responsives=document.getElementById("new");
 var navredata=document.getElementById("data");
 var ull=document.getElementById("ul");
-var btnofcart=document.getElementById("cartbtn");
-var cartbtn=document.querySelectorAll(".addtocart");
 
 
 // cart 
@@ -73,12 +71,13 @@ ull.style.display="block"
 // sticky nav 
 function changeCss () {
    if(scrollY >= 100){
+    navbar.style.width="100%";
     allbars.style.display="none";
     topnav.style.display = "none";
     logobox.style.height="80px";
     logoimage.style.height="80px";
     navlinks.style.justifyContent="end";
-    navbar.style.width="100%";
+   
   
 
 
@@ -88,7 +87,9 @@ function changeCss () {
     logobox.style.height="100px";
     navbar.style.width="90%";
     logoimage.style.height="100px";
-    navbar.style.width="100%";
+
+    navbar.style.width="100%"; 
+
 
     navlinks.style.justifyContent="space-between";
 
@@ -162,12 +163,13 @@ function toggleImages(id) {
     plusImg.style.display = plusImg.style.display === 'none' ? 'inline' : 'none';
     minusImg.style.display = minusImg.style.display === 'none' ? 'inline' : 'none';
 }
+// cart 
+var btnofcart=document.getElementById("cartbtn");
+var cartbtn=btnofcart.getElementsByClassName("addtocart");
 
-
-cartbtn.addEventListener('click',()=>{
- array.forEach(btn => {
-    btn.alert('hello'); 
- });
+if(cartbtn.click===true){
+ alert('hello'); 
+ }
    
- 
-})
+
+
