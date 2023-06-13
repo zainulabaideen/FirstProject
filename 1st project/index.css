@@ -135,7 +135,6 @@ display: flex;
 flex-direction: column;
   }
   .dropdownelements li{ 
- /* padding-top: 16px; */
  font-size: 15px;
   }
  
@@ -489,8 +488,8 @@ line-height: 1.7;
    top: 85%;
    left: 90%;
     z-index: 900;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 50px;
     cursor: pointer;
     border: 2px solid rgb(179, 179, 179);
@@ -537,15 +536,16 @@ scale: 1.1;
 }
  .messanger{
     position: fixed;
-    top: 18.8%;
+    bottom: 5%;
     left: 76%;
-     min-height: 300px;
+     min-height: 200px;
      max-height: fit-content;
      background-color: #f5fadc;
-     box-shadow: 5px 5px rgb(214, 214, 214);
+     box-shadow: 2px 2px rgb(107, 107, 107);
      line-height: 2;
     transition: all 0.45s ease;
      overflow: hidden;
+     border-radius: 20px;
  }
  
   .messanger .firstmessage{
@@ -553,7 +553,6 @@ scale: 1.1;
     position: relative;
      height: 50px;
      width:fit-content;
-     margin: 25px 35px;
      background: #ffffff;
      border-radius: 15px;
      z-index: 200;
@@ -571,7 +570,7 @@ scale: 1.1;
  position: relative;
  padding: 12px 15px;
  background: #f0f0f0;
- margin-top: 90%;
+ margin-bottom: 2%;
  width: 100%;
  }
   .messanger .messangerfooter .btn{
@@ -777,7 +776,7 @@ color: var(--orange);
    display: none;
    /* height: 600vh; */
    bottom: 0;
-    z-index: 1000;
+    z-index: 2000;
     box-shadow: #323232;
     top: 0;
     right: 0;
@@ -901,7 +900,6 @@ padding-left:4.5rem;
         }
          .messanger{
             position: fixed;
-            top: 28.8%;
             left: 60%;
              min-height: 250px;
              line-height: 1;
@@ -964,8 +962,8 @@ padding-left:4.5rem;
       }
      .messanger{
         position: fixed;
-        top: 28.8%;
-        left: 30%;
+        /* top: 28.8%; */
+        left: 10%;
          min-height: 250px;
          line-height: 1;
          border-radius: 15px;
@@ -981,6 +979,7 @@ padding-left:4.5rem;
         right: 0;
         width: 100%;
         position: sticky;
+        
     }
     
      .responsivenav a{
@@ -1116,6 +1115,8 @@ padding-left:4.5rem;
     align-items: center;
     padding: 1rem;
     color: white;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 .bg{
@@ -1123,9 +1124,11 @@ padding-left:4.5rem;
 }
 
 .faq .faq-below {
+    font-size: 12px;
     color: white;
     display: flex;
     justify-content: center;
+    font-family: 'Lato',sans-serif;
 }
 .faq-hover {
     text-decoration: none;
@@ -1148,11 +1151,13 @@ padding-left:4.5rem;
     
 
     color: white;
-    background-color: rgb(158, 219, 158);
+    background-color: var(--light-green);
     font-size: 15px;
 }
 
 .faq-item div .text {
+    font-family: 'Montserrat', sans-serif;
+
     text-overflow: ellipsis;
   }
 
@@ -1194,6 +1199,7 @@ padding-left:4.5rem;
 .aboutUsCenter p {
     color: rgb(151, 144, 144);
     font-size: large;
+    font-family: 'Lato',sans-serif;
 }
 .aboutUsCenter .btn {
     margin-top: 2rem;
@@ -1208,6 +1214,7 @@ padding-left:4.5rem;
 .aboutUsCenter p {
     color: rgb(151, 144, 144);
     font-size: small;
+    font-family: 'Lato',sans-serif;
 }
 
 /* About Us Bottom Portion */
@@ -1242,12 +1249,15 @@ padding-left:4.5rem;
     font-size: small;
 }
 .aboutUsBottom p {
+    font-family: 'Lato',sans-serif;
     color: rgb(151, 144, 144);
     font-size: small;    
     text-align: center;
 }
 .aboutUsBottom h1 {
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 
@@ -1263,19 +1273,20 @@ padding-left:4.5rem;
 }
 .contactUsCenter h2 {
     font-size: 2.3rem;
+    font-family: 'Montserrat', sans-serif;
 }
 .contactUsCenter p {
-    color: rgb(151, 144, 144);
+    color: var(--dark-grey);
     font-size: small;    
     text-align: center;
     margin-top: 0rem;
+    font-family: 'Lato',sans-serif;
 }
 
 /* Message and Map Portion */
 .messageMap {
     display: flex;
     gap: 1rem;
-    /* margin: -3rem 0rem; */
 }
 .messageMap div {
     width: 50%;
@@ -1285,7 +1296,7 @@ padding-left:4.5rem;
     padding: 2rem;
 }
 .messageContainer p {
-    color: rgb(151, 144, 144);
+    color: var(--dark-grey);
     font-size: small;    
 }
 .messageContainer div {
@@ -1302,12 +1313,12 @@ padding-left:4.5rem;
     width: 25%;
 }
 .messageContainer .inputArea {
-    color: rgb(151, 144, 144);
+    color: var(--dark-grey);
     font-size: x-small;    
     padding: 8px;
     width: 100%;
     height: 4rem;
-    border-color: rgb(226, 223, 223);
+    border-color: #e5e5e5;
 }
 .messageContainer .btn {
     margin-top: 2rem;
@@ -1343,12 +1354,12 @@ padding-left:4.5rem;
     margin-bottom: 0rem;
 }
 .contactUsCards .cardsOuter .cardsContent p {
-    color: rgb(151, 144, 144);
+    color: var(--dark-grey);
     font-size: small;    
 }
 .contactUsCards .cardsOuter .cardsContent h5 {
     margin-top: 0.5rem;
-    color: rgb(151, 144, 144);
+    color: var(--dark-grey);
 }
 
 
@@ -1385,8 +1396,9 @@ padding-left:4.5rem;
     .aboutUsBottom h1 {
         font-size: 1.5rem;
     }
-    .aboutUsBottom .card h2 {
-        font-size: 1.3rem;
+    .aboutUsBottom  h2 {
+        /* font-size: 1.0rem; */
+        text-align: center;
     }
     .aboutUsBottom .cardRow {
         display: flex;

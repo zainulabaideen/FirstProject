@@ -20,6 +20,9 @@ var navredata=document.getElementById("data");
 var ull=document.getElementById("ul");
 
 
+
+
+
 // cart 
 
 
