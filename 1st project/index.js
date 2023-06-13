@@ -167,12 +167,28 @@ function toggleImages(id) {
     minusImg.style.display = minusImg.style.display === 'none' ? 'inline' : 'none';
 }
 // cart 
-var btnofcart=document.getElementById("cartbtn");
-var cartbtn=btnofcart.getElementsByClassName("addtocart");
+var btn1=document.querySelectorAll('.addtocart');
+var sidecartdata=document.getElementById('cartside');
+var sidecartcross=document.getElementById('sidecartcross');
+var sidecartcross2=document.getElementById('cross2');
+var cartbtn=document.getElementById('cartbtns');
 
-if(cartbtn.click===true){
- alert('hello'); 
- }
+for(const btn of btn1 ){
+    btn.addEventListener('click',()=>{
+        sidecartdata.style.display='block';
+        document.getElementById("datacart").style.display='flex';
+        cartbtn.style.display='flex';
+    })
+}
+sidecartcross.addEventListener('click',()=>{
+    sidecartdata.style.display='none';
+})
+sidecartcross2.addEventListener('click',()=>{
+    document.getElementById("datacart").style.display='none';
+    cartbtn.style.display='none';
+
+})
+
    
 
 

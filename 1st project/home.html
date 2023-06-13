@@ -16,16 +16,30 @@
 <body>
     <!-- sidecart -->
     <div class="completesidecart">
-        <div class="sidecart">
-            
-          <div class="sidecarttitle"><div class="title">  <p>Shopping Cart</p> <p>  <i class="fa fa-solid fa-xmark" ></i></p></div>
-        <div class="cartdata"><a href=""><img src="assets/product1.jpg" alt="" width="60" height="60"> <p>FifthPulse Blue Disposable Gloves X Large </p> <i class="fa fa-solid fa-xmark" ></i> </a>
-        <div class="price">$5.89</div></div>
-        </div>
+        <div class="sidecart" id="cartside">
 
+            <div class="sidecarttitle">
+                <div class="title">
+                    <p>Shopping Cart</p>
+                    <p> <i class="fa fa-solid fa-xmark" id="sidecartcross"></i></p>
+                </div>
+                <div class="cartdata" id="datacart" style="display: flex;"><a href=""><img src="assets/product1.jpg"
+                            alt="" width="60" height="60">
+                        <p>FifthPulse Blue Disposable Gloves X Large </p>
+                    </a>
+                    <p class="price" style="margin-right: 25px;">$5.89</p>
+                    <div style="margin-top: 15px; cursor: pointer;"><i class="fa fa-solid fa-xmark" id="cross2"></i>
+                    </div>
+                </div>
+                <div class="twobuttons" id="cartbtns">
+                    <button class="btn1">View Cart</button><button class="btn2">CheckOut</button>
+                </div>
+            </div>
+           
         </div>
     </div>
-</div>
+    </div>
+    </div>
     <div class="entiresite">
 
 
@@ -215,8 +229,8 @@
             </ul>
         </div>
 
-       
-       
+
+
         <!-- Products  -->
 
         <div class="filteredproducts">
@@ -229,20 +243,8 @@
                     <li>Cheapest</li>
                 </ul>
             </div>
-            <div class="products" id="cartbtn">
+            <div class="products">
                 <div class="product"><img src="assets/product1.jpg" alt="">
-                    <div class="btn"><button class="addtocart" >Add To Cart</button></div>
-                    <div class="data">
-                        <a href="\household" class="pretitle">Health & Household</a>
-                        <a href="\household" class="description">FifthPulse Blue Disposable Gloves X Large </a>
-                        <div class="pricesection">
-                            <div class="price">$18.00</div>
-                            <div class="stars"><i class="fa fa-solid fa-star"></i><i class="fa fa-solid fa-star"></i><i
-                                    class="fa fa-solid fa-star"></i></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product" id="cartbtn"><img src="assets/product1.jpg" alt="">
                     <div class="btn"><button class="addtocart">Add To Cart</button></div>
                     <div class="data">
                         <a href="\household" class="pretitle">Health & Household</a>
@@ -254,7 +256,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product" id="cartbtn"><img src="assets/product1.jpg" alt="">
+                <div class="product"><img src="assets/product1.jpg" alt="">
                     <div class="btn"><button class="addtocart">Add To Cart</button></div>
                     <div class="data">
                         <a href="\household" class="pretitle">Health & Household</a>
@@ -266,7 +268,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product" id="cartbtn"><img src="assets/product1.jpg" alt="">
+                <div class="product"><img src="assets/product1.jpg" alt="">
                     <div class="btn"><button class="addtocart">Add To Cart</button></div>
                     <div class="data">
                         <a href="\household" class="pretitle">Health & Household</a>
@@ -278,7 +280,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product" id="cartbtn"><img src="assets/product1.jpg" alt="">
+                <div class="product"><img src="assets/product1.jpg" alt="">
                     <div class="btn"><button class="addtocart">Add To Cart</button></div>
                     <div class="data">
                         <a href="\household" class="pretitle">Health & Household</a>
@@ -290,10 +292,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="product" id="cartbtn"><img src="assets/product1.jpg" alt="">
+                <div class="product"><img src="assets/product1.jpg" alt="">
                     <div class="btn"><button class="addtocart">Add To Cart</button></div>
                     <div class="data">
-                        <a href="\household"  class="pretitle">Health & Household</a>
+                        <a href="\household" class="pretitle">Health & Household</a>
+                        <a href="\household" class="description">FifthPulse Blue Disposable Gloves X Large </a>
+                        <div class="pricesection">
+                            <div class="price">$18.00</div>
+                            <div class="stars"><i class="fa fa-solid fa-star"></i><i class="fa fa-solid fa-star"></i><i
+                                    class="fa fa-solid fa-star"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product"><img src="assets/product1.jpg" alt="">
+                    <div class="btn"><button class="addtocart">Add To Cart</button></div>
+                    <div class="data">
+                        <a href="\household" class="pretitle">Health & Household</a>
                         <a href="\household" class="description">FifthPulse Blue Disposable Gloves X Large </a>
                         <div class="pricesection">
                             <div class="price">$18.00</div>
@@ -307,313 +321,313 @@
     </div>
 
 
-        <!-- Brands  -->
-        <div class="brands">
-            <p id="brandtitle">Our Brands</p>
-            <p>We maintain the highest level of online payment security with complete encryption and data security
-                solutions to protect customer data</p>
+    <!-- Brands  -->
+    <div class="brands">
+        <p id="brandtitle">Our Brands</p>
+        <p>We maintain the highest level of online payment security with complete encryption and data security
+            solutions to protect customer data</p>
 
 
 
 
-            <div id="brandimages">
+        <div id="brandimages">
 
-                <marquee behavior="" direction="right" scrollamount="12">
-                    <img src="assets/brand1.PNG" alt="">
-                    <img src="assets/brand2.PNG" alt="">
-                    <img src="assets/brand3.PNG" alt="">
-                    <img src="assets/brand4.PNG" alt="">
-                    <img src="assets/brand3.PNG" alt="">
-                    <img src="assets/brand4.PNG" alt="">
-                    <img src="assets/brand2.PNG" alt="">
+            <marquee behavior="" direction="right" scrollamount="12">
+                <img src="assets/brand1.PNG" alt="">
+                <img src="assets/brand2.PNG" alt="">
+                <img src="assets/brand3.PNG" alt="">
+                <img src="assets/brand4.PNG" alt="">
+                <img src="assets/brand3.PNG" alt="">
+                <img src="assets/brand4.PNG" alt="">
+                <img src="assets/brand2.PNG" alt="">
 
-                </marquee>
-            </div>
+            </marquee>
         </div>
+    </div>
 
 
 
 
-        <!-- Popular Products -->
-        <div class="popularProducts">
-            <p id="producttitle">Popular Products</p>
-            <div class="allboxes">
-                <div class="productboxes">
+    <!-- Popular Products -->
+    <div class="popularProducts">
+        <p id="producttitle">Popular Products</p>
+        <div class="allboxes">
+            <div class="productboxes">
 
-                    <img src="assets/productimage1.jpg" alt="" class="productimg">
-                    <div>
-                        <a href="" class="productdescription">
-                            "HP Printer Paper | 8.5 x 14 Paper | Office 20 lb | 1 Ream - 500 Sheets | 92 Bright | Made
-                            in USA - FSC Certified | 001422R"
-                        </a>
+                <img src="assets/productimage1.jpg" alt="" class="productimg">
+                <div>
+                    <a href="" class="productdescription">
+                        "HP Printer Paper | 8.5 x 14 Paper | Office 20 lb | 1 Ream - 500 Sheets | 92 Bright | Made
+                        in USA - FSC Certified | 001422R"
+                    </a>
 
-                        <p class="productprice">
-                            $13.82
-                        </p>
-                    </div>
-                </div>
-                <div class="productboxes">
-
-                    <img src="assets/productimage2.jpg" alt="" class="productimg">
-                    <div>
-                        <a href="" class="productdescription">
-                            "SKSYZN Dog Dryer 3200W/4.3HP Motor Stepless Adjustable Speed Dog Hair Dryer, Pet Dog
-                            Grooming Dryer Blower with 98.4”Spring Hose,4 Different Nozzles, and Pet Grooming Glove"
-                        </a>
-
-                        <p class="productprice">
-                            $105.00
-                        </p>
-                    </div>
-                </div>
-
-                <div class="productboxes">
-
-                    <img src="assets/productimage3.jpg" alt="" class="productimg">
-                    <div>
-                        <a href="" class="productdescription">
-                            "Devoko Patio Porch Furniture Sets 3 Pieces PE Rattan Wicker Chairs with Table Outdoor
-                            Garden Furniture Sets (Brown/Beige) Click image to open expanded view VIDEO Devoko Patio
-                            Porch
-                        </a>
-
-                        <p class="productprice">
-                            $200.00
-                        </p>
-                    </div>
-                </div>
-
-                <div class="productboxes">
-
-                    <img src="assets/productimage4.jpg" alt="" class="productimg">
-                    <div>
-                        <a href="" class="productdescription">
-                            "Lulu Home Bubble Concentrated Solution, 1 L/ 33.8 OZ Bubble Refill Solution for Kids Bubble
-                            Machine, Giant Bubble Wand, Bubble Gun Blower"
-                        </a>
-
-                        <p class="productprice">
-                            $70.00
-                        </p>
-                    </div>
-                </div>
-
-                <div class="productboxes">
-
-                    <img src="assets/productimage5.jpg" alt="" class="productimg">
-                    <div>
-                        <a href="" class="productdescription">
-                            "Lulu Home Bubble Concentrated Solution, 1 L/ 33.8 OZ Bubble Refill Solution for Kids Bubble
-                            Machine, Giant Bubble Wand, Bubble Gun Blower"
-                        </a>
-
-                        <p class="productprice">
-                            $150.00
-                        </p>
-                    </div>
-                </div>
-
-
-
-                <div class="productboxes">
-
-                    <img src="assets/productimage3.jpg" alt="" class="productimg">
-                    <div>
-                        <a href="" class="productdescription">
-                            "Devoko Patio Porch Furniture Sets 3 Pieces PE Rattan Wicker Chairs with Table Outdoor
-                            Garden Furniture Sets (Brown/Beige) Click image to open expanded view VIDEO Devoko Patio
-                        </a>
-
-                        <p class="productprice">
-                            $200.00
-                        </p>
-                    </div>
-                </div>
-                <div class="productboxes">
-
-                    <img src="assets/productimage3.jpg" alt="" class="productimg">
-                    <div>
-                        <a href="" class="productdescription">
-                            "Devoko Patio Porch Furniture Sets 3 Pieces PE Rattan Wicker Chairs with Table Outdoor
-                            Garden Furniture Sets (Brown/Beige) Click image
-                        </a>
-
-                        <p class="productprice">
-                            $200.00
-                        </p>
-                    </div>
-                </div>
-                <div class="productboxes">
-
-                    <img src="assets/productimage2.jpg" alt="" class="productimg">
-                    <div>
-                        <a href="" class="productdescription">
-                            "SKSYZN Dog Dryer 3200W/4.3HP Motor Stepless Adjustable Speed Dog Hair Dryer, Pet Dog
-                            Grooming Dryer Blower with 98.4”Spring Hose,4 Different Nozzles, and Pet Grooming Glove"
-                        </a>
-
-                        <p class="productprice">
-                            $105.00
-                        </p>
-                    </div>
-                </div>
-                <div class="productboxes">
-
-                    <img src="assets/productimage1.jpg" alt="" class="productimg">
-                    <div>
-                        <a href="" class="productdescription">
-                            "HP Printer Paper | 8.5 x 14 Paper | Office 20 lb | 1 Ream - 500 Sheets | 92 Bright | Made
-                            in USA - FSC Certified | 001422R"
-                        </a>
-
-                        <p class="productprice">
-                            $13.82
-                        </p>
-                    </div>
+                    <p class="productprice">
+                        $13.82
+                    </p>
                 </div>
             </div>
-            <!-- toys  -->
-            <div class="toys">
-                <div id="img1">
-                    <p>Pet Supplies</p>
-                    <a href="" id="toy1">Shop Now</a>
+            <div class="productboxes">
+
+                <img src="assets/productimage2.jpg" alt="" class="productimg">
+                <div>
+                    <a href="" class="productdescription">
+                        "SKSYZN Dog Dryer 3200W/4.3HP Motor Stepless Adjustable Speed Dog Hair Dryer, Pet Dog
+                        Grooming Dryer Blower with 98.4”Spring Hose,4 Different Nozzles, and Pet Grooming Glove"
+                    </a>
+
+                    <p class="productprice">
+                        $105.00
+                    </p>
                 </div>
-                <div id="img2">
-                    <p>Garden and Tools</p>
-                    <a href="" id="toy1">Shop Now</a>
+            </div>
+
+            <div class="productboxes">
+
+                <img src="assets/productimage3.jpg" alt="" class="productimg">
+                <div>
+                    <a href="" class="productdescription">
+                        "Devoko Patio Porch Furniture Sets 3 Pieces PE Rattan Wicker Chairs with Table Outdoor
+                        Garden Furniture Sets (Brown/Beige) Click image to open expanded view VIDEO Devoko Patio
+                        Porch
+                    </a>
+
+                    <p class="productprice">
+                        $200.00
+                    </p>
+                </div>
+            </div>
+
+            <div class="productboxes">
+
+                <img src="assets/productimage4.jpg" alt="" class="productimg">
+                <div>
+                    <a href="" class="productdescription">
+                        "Lulu Home Bubble Concentrated Solution, 1 L/ 33.8 OZ Bubble Refill Solution for Kids Bubble
+                        Machine, Giant Bubble Wand, Bubble Gun Blower"
+                    </a>
+
+                    <p class="productprice">
+                        $70.00
+                    </p>
+                </div>
+            </div>
+
+            <div class="productboxes">
+
+                <img src="assets/productimage5.jpg" alt="" class="productimg">
+                <div>
+                    <a href="" class="productdescription">
+                        "Lulu Home Bubble Concentrated Solution, 1 L/ 33.8 OZ Bubble Refill Solution for Kids Bubble
+                        Machine, Giant Bubble Wand, Bubble Gun Blower"
+                    </a>
+
+                    <p class="productprice">
+                        $150.00
+                    </p>
+                </div>
+            </div>
+
+
+
+            <div class="productboxes">
+
+                <img src="assets/productimage3.jpg" alt="" class="productimg">
+                <div>
+                    <a href="" class="productdescription">
+                        "Devoko Patio Porch Furniture Sets 3 Pieces PE Rattan Wicker Chairs with Table Outdoor
+                        Garden Furniture Sets (Brown/Beige) Click image to open expanded view VIDEO Devoko Patio
+                    </a>
+
+                    <p class="productprice">
+                        $200.00
+                    </p>
+                </div>
+            </div>
+            <div class="productboxes">
+
+                <img src="assets/productimage3.jpg" alt="" class="productimg">
+                <div>
+                    <a href="" class="productdescription">
+                        "Devoko Patio Porch Furniture Sets 3 Pieces PE Rattan Wicker Chairs with Table Outdoor
+                        Garden Furniture Sets (Brown/Beige) Click image
+                    </a>
+
+                    <p class="productprice">
+                        $200.00
+                    </p>
+                </div>
+            </div>
+            <div class="productboxes">
+
+                <img src="assets/productimage2.jpg" alt="" class="productimg">
+                <div>
+                    <a href="" class="productdescription">
+                        "SKSYZN Dog Dryer 3200W/4.3HP Motor Stepless Adjustable Speed Dog Hair Dryer, Pet Dog
+                        Grooming Dryer Blower with 98.4”Spring Hose,4 Different Nozzles, and Pet Grooming Glove"
+                    </a>
+
+                    <p class="productprice">
+                        $105.00
+                    </p>
+                </div>
+            </div>
+            <div class="productboxes">
+
+                <img src="assets/productimage1.jpg" alt="" class="productimg">
+                <div>
+                    <a href="" class="productdescription">
+                        "HP Printer Paper | 8.5 x 14 Paper | Office 20 lb | 1 Ream - 500 Sheets | 92 Bright | Made
+                        in USA - FSC Certified | 001422R"
+                    </a>
+
+                    <p class="productprice">
+                        $13.82
+                    </p>
                 </div>
             </div>
         </div>
+        <!-- toys  -->
+        <div class="toys">
+            <div id="img1">
+                <p>Pet Supplies</p>
+                <a href="" id="toy1">Shop Now</a>
+            </div>
+            <div id="img2">
+                <p>Garden and Tools</p>
+                <a href="" id="toy1">Shop Now</a>
+            </div>
+        </div>
+    </div>
 
 
-        <!-- services -->
-        <div class="services">
-            <div class="service">
-                <i class="fa fa-regular fa-truck"></i>
-                <h6>Free Shipping</h6>
-                <p>shipping on all Order with Local Area order above $700</p>
+    <!-- services -->
+    <div class="services">
+        <div class="service">
+            <i class="fa fa-regular fa-truck"></i>
+            <h6>Free Shipping</h6>
+            <p>shipping on all Order with Local Area order above $700</p>
+        </div>
+        <div class="service"><i class="fa fa-solid fa-headphones"></i>
+            <h6>24/7 Support</h6>
+            <p>Our Customer Support Team is ready and available to help.</p>
+        </div>
+        <div class="service"><i class="fa fa-solid fa-rotate-left"></i>
+            <h6>30 Days Return</h6>
+            <p>Your Product any fault within 30 days for an exchange.</p>
+        </div>
+        <div class="service"><i class="fa fa-solid fa-money-bill"></i>
+            <h6>Map Following Price</h6>
+            <p>Follow brand Map Following Price</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- contact us logo  -->
+    <div class="contactlogo " id="contact">
+        <img src="assets/onlylogo.png" alt="" class="contactlogoimg">
+    </div>
+    <div class="messanger " id="mess">
+
+        <i class="fa fa-solid fa-xmark " id="closing"></i>
+
+        <div class="messangerbox" id="messangebox">
+            <div class="firstmessage">
+                <p>Hello, How Can I help You? </p>
             </div>
-            <div class="service"><i class="fa fa-solid fa-headphones"></i>
-                <h6>24/7 Support</h6>
-                <p>Our Customer Support Team is ready and available to help.</p>
+            <div class=" firstmessage" id="userresponse">
+
             </div>
-            <div class="service"><i class="fa fa-solid fa-rotate-left"></i>
-                <h6>30 Days Return</h6>
-                <p>Your Product any fault within 30 days for an exchange.</p>
+            <div class="messangerfooter">
+                <input type="text" id="inputtext">
+                <button class="btn" id="send">Send</button>
+
             </div>
-            <div class="service"><i class="fa fa-solid fa-money-bill"></i>
-                <h6>Map Following Price</h6>
-                <p>Follow brand Map Following Price</p>
+        </div>
+    </div>
+
+
+
+
+    <!-- footer  -->
+    <hr>
+    <footer>
+        <div class="col1 col">
+            <img src="assets/Logo.png" alt="" srcset="" class="footer_img">
+            <p>Zyndex is an enchanting and easy to use e-Commerce website that allows users to buy online products
+                at
+                their door steps</p>
+            <p>
+                <span><i class="fa fa-solid fa-location-pin"></i></span> Unit D3, 579 Prescot Road Old Swan
+                LiverPool
+                England L13 5UX
+            </p>
+            <p>
+                <span><i class="fa fa-thin fa-envelope-open"></i></span> support@klixzi.co.uk
+            </p>
+
+            <p><span><i class="fa fa-light fa-phone"></i></span> +92300000000</p>
+            <div class="socials">
+                <a href="" class="social"><i class="fa fa-light fa-facebook"></i></a>
+                <a href="" class="social"><i class="fa fa-light fa-twitter"></i></a>
+                <a href="" class="social"><i class="fa fa-light fa-pinterest"></i></a>
+                <a href="" class="social"><i class="fa fa-light fa-vimeo"></i></a>
+
+            </div>
+
+        </div>
+        <div class="ccol samecol">
+            <h4>Useful Links</h4>
+            <p>
+                <a href="ContactUs.html">
+                    <i class="fa fa-light fa-chevron-right"></i><span>Contact Us</span>
+                </a>
+            </p>
+            <p>
+                <a href="">
+                    <i class="fa fa-light fa-chevron-right"></i><span>My Account</span>
+                </a>
+            </p>
+            <p>
+                <a href="">
+                    <i class="fa fa-light fa-chevron-right"></i><span>Cart</span>
+                </a>
+            </p>
+        </div>
+
+        <div class="samecol col">
+            <h4>Information</h4>
+            <p>
+                <a href="">
+                    <i class="fa fa-light fa-chevron-right"></i><span>Privacy Policy</span>
+                </a>
+            </p>
+            <p>
+                <a href="">
+                    <i class="fa fa-light fa-chevron-right"></i><span>Terms And Conditions</span>
+                </a>
+            </p>
+            <p>
+                <a href="AboutUs.html">
+                    <i class="fa fa-light fa-chevron-right"></i><span>About Us</span>
+                </a>
+            </p>
+        </div>
+        <div class="col4 col">
+            <h4>Newsletter</h4>
+            <p> Keep up on our always evolving product features and technology.</p>
+            <div class="input">
+                <input type="text" placeholder="Enter your email"> <button>
+                    <i class="fa fa-light fa-telegram"></i></button>
             </div>
         </div>
 
-
-
-
-
-       
-
-
-        <!-- contact us logo  -->
-        <div class="contactlogo " id="contact">
-            <img src="assets/onlylogo.png" alt="" class="contactlogoimg">
-        </div>
-        <div class="messanger " id="mess">
-
-            <i class="fa fa-solid fa-xmark " id="closing"></i>
-
-            <div class="messangerbox" id="messangebox">
-                <div class="firstmessage">
-                    <p>Hello, How Can I help You? </p>
-                </div>
-                <div class=" firstmessage" id="userresponse">
-
-                </div>
-                <div class="messangerfooter">
-                    <input type="text" id="inputtext">
-                    <button class="btn" id="send">Send</button>
-
-                </div>
-            </div>
-        </div>
-
-      
-
-
- <!-- footer  -->
- <hr>
- <footer>
-     <div class="col1 col">
-         <img src="assets/Logo.png" alt="" srcset="" class="footer_img">
-         <p>Zyndex is an enchanting and easy to use e-Commerce website that allows users to buy online products
-             at
-             their door steps</p>
-         <p>
-             <span><i class="fa fa-solid fa-location-pin"></i></span> Unit D3, 579 Prescot Road Old Swan
-             LiverPool
-             England L13 5UX
-         </p>
-         <p>
-             <span><i class="fa fa-thin fa-envelope-open"></i></span> support@klixzi.co.uk
-         </p>
-
-         <p><span><i class="fa fa-light fa-phone"></i></span> +92300000000</p>
-         <div class="socials">
-             <a href="" class="social"><i class="fa fa-light fa-facebook"></i></a>
-             <a href="" class="social"><i class="fa fa-light fa-twitter"></i></a>
-             <a href="" class="social"><i class="fa fa-light fa-pinterest"></i></a>
-             <a href="" class="social"><i class="fa fa-light fa-vimeo"></i></a>
-
-         </div>
-
-     </div>
-     <div class="ccol samecol">
-         <h4>Useful Links</h4>
-         <p>
-             <a href="">
-                 <i class="fa fa-light fa-chevron-right"></i><span>Contact Us</span>
-             </a>
-         </p>
-         <p>
-             <a href="">
-                 <i class="fa fa-light fa-chevron-right"></i><span>My Account</span>
-             </a>
-         </p>
-         <p>
-             <a href="">
-                 <i class="fa fa-light fa-chevron-right"></i><span>Cart</span>
-             </a>
-         </p>
-     </div>
-
-     <div class="samecol col">
-         <h4>Information</h4>
-         <p>
-             <a href="">
-                 <i class="fa fa-light fa-chevron-right"></i><span>Privacy Policy</span>
-             </a>
-         </p>
-         <p>
-             <a href="">
-                 <i class="fa fa-light fa-chevron-right"></i><span>Terms And Conditions</span>
-             </a>
-         </p>
-         <p>
-             <a href="">
-                 <i class="fa fa-light fa-chevron-right"></i><span>About Us</span>
-             </a>
-         </p>
-     </div>
-     <div class="col4 col">
-         <h4>Newsletter</h4>
-         <p> Keep up on our always evolving product features and technology.</p>
-         <div class="input">
-             <input type="text" placeholder="Enter your email"> <button>
-                 <i class="fa fa-light fa-telegram"></i></button>
-         </div>
-     </div>
-
- </footer>
+    </footer>
 </body>
 <script src="index.js" defer></script>
 

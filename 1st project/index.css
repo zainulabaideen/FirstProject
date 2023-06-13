@@ -788,7 +788,7 @@ color: var(--orange);
   
     position: sticky;
     
-    width: 25%;
+    width: 24%;
     top: 0px;
     min-height: 100%;
     max-height: fit-content;
@@ -821,10 +821,40 @@ color: black !important;
 padding-top: 17px;
 cursor: pointer;
 }
-.sidecart .cartdata .price{
+.sidecart  .price{
 color: var(--orange);
 padding-left:4.5rem;
 }
+.sidecart .twobuttons{
+display: flex;
+align-items: center;
+margin-top: 70vh;
+width: 100%;
+font-family: 'Lato',sans-serif;
+font-weight: 500;
+
+}
+.sidecart .btn1{
+text-align: center;
+width: 50%;
+padding: 14px 0;
+background-color: var(--orange);
+color: white;
+border: none;
+
+}
+.sidecart .btn1:hover{
+    background-color: black;
+    transition: all 0.4s ease;
+    }
+.sidecart .btn2{
+    text-align: center;
+    width: 50%;
+padding: 14px 0;
+background-color: black;
+border: none;
+color: white;
+    }
 
 .sidecart .title p,i{ 
     text-shadow: 10px 17px var(#1B1C19);
@@ -1625,7 +1655,7 @@ padding-top: 20px;
     font-size: 20px;
     font-weight: 600;
 }
-.cart .rightcart .alltotal .totals .price{
+.cart .rightcart   .price{
     font-size: 24px;
     color: var(--orange);
     font-weight: 700;
