@@ -10,6 +10,7 @@ body{
     --dark-grey:#969696;
     --light-green:#04d39f;
     --red:#DD3333;
+    --very-light-gray:#FBFBFB;
     --light-grey:#323232;
     overflow-x:hidden !important ;
     top: 0;
@@ -501,8 +502,8 @@ line-height: 1.7;
 }
  .contactlogo img{
    position: relative;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     
     cursor: pointer;
     
@@ -1678,6 +1679,177 @@ padding-top: 20px;
 background-color: var(--orange);
 transition: all 0.5s ease ;
 }
+/* form  */
+.formtop{
+background-color: var(--very-light-gray);
+margin-top: 35px;
+height: auto!important;
+}
+.formtopdata{
+    width: 82%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0;
+}
+.formtopdata .formtitle{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+.formtopdata .formtitleleft{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+
+}
+.formtopdata .formtitleleft a{
+    color: black;
+}
+.formtopdata .formtitleleft i{
+    color: black;
+    font-size: 14px;
+
+}
+.formtopdata .formtitleleft a:hover{
+    color: var(--orange);
+}
+.aftertop{
+    display: flex;
+    text-align: center;
+   margin: 40px 0px ;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.aftertop h5{
+    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+
+}
+.aftertop #loginn{
+    color: black;
+    font-size: 12px;
+    padding: 0 10px;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+
+}
+
+.aftertop #loginn:hover{
+    text-decoration: none;
+    color: var(--orange);
+}
+.loginform{
+    padding: 0 30px;
+    font-family: 'Lato',sans-serif;
+    width: 60%;
+    border: 1px solid #e5e5e5;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    color: var(--dark-grey);
+    padding-bottom: 20px;
+}
+.loginform p{
+    color:#999999;
+}
+.loginform label{
+    display: block;
+    margin-top: 10px;
+}
+.loginform #email{
+padding-left: 8px;
+}
+.loginform input{
+box-sizing: border-box;
+width: 90%;
+margin: 0;
+outline: 0;
+line-height: normal;
+height: 30px;
+border:1px solid  #999999;
+margin:10px 5px  ;
+padding: 0 15px; 
+}
+.loginform button{
+    padding: 10px 10px ;
+    color: white;
+    background-color: var(--orange);
+    border: none;
+    border-radius: 2px;
+    margin: 7px 4px;
+   
+    
+
+}
+.loginform .btn{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.loginform div input{
+    width: 14px;
+    height: 14px;
+}
+.downdata .leftdata{
+    width: 45%;
+    margin-left: 30px;
+    border: 1px solid #e5e5e5;
+}
+
+.downdata .leftdata h3{ 
+margin-left: 30px;
+font-size: 26px;
+font-family: 'Montserrat', sans-serif;
+font-weight: 500;
+
+}
+.downdata .rightdatatitle{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-family: 'Lato',sans-serif;
+    font-weight: 500;
+    margin: 5px 15px;
+}
+.loginform button:hover{
+    color: white;
+    transition: all 0.4s ease;
+    background-color: black;
+}
+.downdata .rightdata{
+width: 45%;
+}
+.downdata .leftdata input{
+    box-sizing: border-box;
+width: 90%;
+margin: 0;
+outline: 0;
+line-height: normal;
+height: 30px;
+border:1px solid  #e5e5e5;
+margin:10px 5px ;
+padding: 0 15px; 
+}
+.downdata .leftdata label{
+    color: var(--dark-grey);
+    display: block;
+    /* margin-top: 10px;   */
+    padding-left: 10px;  
+    font-family: 14px;
+    font-family: 'Lato',sans-serif;
+}
+.downdata .leftdata select{
+    width: 45%;
+}
+.downdata .leftdata option{
+    color: var(--dark-grey);
+}
+
+
 @media (max-width:720px){
     .cart .leftcart{
         position: relative;
@@ -1711,5 +1883,10 @@ transition: all 0.5s ease ;
 
         margin-left: 1.5rem;
        
+    }
+    .loginform .btn{
+        width: 63%;
+        flex-direction: column;
+        text-align: center;
     }
 }

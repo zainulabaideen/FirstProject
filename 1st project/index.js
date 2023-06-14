@@ -24,7 +24,21 @@ var ull=document.getElementById("ul");
 
 
 // cart 
+// login
+var loginn=document.getElementById('loginn');
+var loginhide=document.getElementById('formlogin');
+var hide=false;
 
+
+loginn.addEventListener('click',()=>{
+    hide=!hide;
+    if(hide==true){
+        loginhide.style.display='none';
+    }
+    else{
+        loginhide.style.display='flex';
+    }
+})  
 
 //nav
 responsive.style.display="none";
@@ -42,7 +56,7 @@ closenav.addEventListener("click",()=>{
 
 })
 
-messanger.style.display="none";
+// messanger.style.display="none";
 contactlogo.addEventListener("click",()=>{
     contactlogo.style.display="none";
     messanger.style.display="block";
@@ -126,7 +140,6 @@ prev.onclick = function(){
 let refreshInterval = setInterval(()=> {next.click()}, 3000);
 function reloadSlider(){
     slider.style.left = -items[active].offsetLeft + 'px';
-    // 
     let last_active_dot = document.querySelector('.slider .dots li.active');
     last_active_dot.classList.remove('active');
     dots[active].classList.add('active');
@@ -188,7 +201,5 @@ sidecartcross2.addEventListener('click',()=>{
     cartbtn.style.display='none';
 
 })
-
-   
-
+ 
 
