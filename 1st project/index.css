@@ -20,6 +20,7 @@ body{
 }
  a{
     text-decoration: none;
+    
 }
  ul{
     list-style: none;
@@ -547,7 +548,8 @@ scale: 1.1;
     transition: all 0.45s ease;
      overflow: hidden;
      border-radius: 20px;
- }
+    display: none;
+    }
  
   .messanger .firstmessage{
    
@@ -835,15 +837,18 @@ font-family: 'Lato',sans-serif;
 font-weight: 500;
 
 }
+.sidecart .twobuttons a{ 
+color: white;
+}
 .sidecart .btn1{
 text-align: center;
 width: 50%;
 padding: 14px 0;
 background-color: var(--orange);
-color: white;
 border: none;
 
 }
+
 .sidecart .btn1:hover{
     background-color: black;
     transition: all 0.4s ease;
@@ -1043,12 +1048,7 @@ color: white;
           margin-top: 3rem;
           border-bottom: 1px solid var(--dark-grey);
         }
-        #cross .active{
-          display: none;
-        }
-        #bar.active{
-          display: none;
-        }
+        
       
     .navlinks .active {
         left: 0;
@@ -1558,6 +1558,30 @@ color: white;
     margin-right: auto;
 
 }
+.cartincrement {
+    display: flex;
+    /* align-items: center; */
+  }
+  
+  .cartincrement button {
+    width: 14px;
+    height: 14px;
+    font-size: 9px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: black;
+    border: none;
+  }
+  .cartincrement button:hover {
+    background-color: var(--orange);
+  }
+  #cartCount {
+    margin: 0 5px;
+    font-size: 13px;
+  }
+  
 .cart .rightcart{
     margin-top: 2rem;
     width: 320px;
@@ -1699,20 +1723,20 @@ height: auto!important;
     font-size: 24px;
     font-weight: 600;
 }
-.formtopdata .formtitleleft{
+ .formtitleleft{
     font-family: 'Lato', sans-serif;
     font-size: 14px;
 
 }
-.formtopdata .formtitleleft a{
+.formtitleleft a{
     color: black;
 }
-.formtopdata .formtitleleft i{
+ .formtitleleft i{
     color: black;
     font-size: 14px;
 
 }
-.formtopdata .formtitleleft a:hover{
+.formtitleleft a:hover{
     color: var(--orange);
 }
 .aftertop{

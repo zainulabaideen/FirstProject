@@ -22,24 +22,6 @@ var ull=document.getElementById("ul");
 
 
 
-
-// cart 
-// login
-var loginn=document.getElementById('loginn');
-var loginhide=document.getElementById('formlogin');
-var hide=false;
-
-
-loginn.addEventListener('click',()=>{
-    hide=!hide;
-    if(hide==true){
-        loginhide.style.display='none';
-    }
-    else{
-        loginhide.style.display='flex';
-    }
-})  
-
 //nav
 responsive.style.display="none";
 
@@ -55,19 +37,6 @@ closenav.addEventListener("click",()=>{
     responsive.style.display="none";
 
 })
-
-// messanger.style.display="none";
-contactlogo.addEventListener("click",()=>{
-    contactlogo.style.display="none";
-    messanger.style.display="block";
-
-})
-closebtn.addEventListener("click",()=>{
-    contactlogo.style.display="flex";
-    messanger.style.display="none";
-})
-
-
 // responsivenav 
 ull.style.display="none"
 
@@ -89,7 +58,7 @@ ull.style.display="block"
 function changeCss () {
    if(scrollY >= 100){
     navbar.style.width="100%";
-    allbars.style.display="none";
+    // allbars.style.display="none";
     topnav.style.display = "none";
     logobox.style.height="80px";
     logoimage.style.height="80px";
@@ -99,7 +68,7 @@ function changeCss () {
 
 
    }     else{
-    allbars.style.display="inline-block";
+    // allbars.style.display="inline-block";
     topnav.style.display = "flex";
     logobox.style.height="100px";
     navbar.style.width="90%";
@@ -111,9 +80,48 @@ function changeCss () {
     navlinks.style.justifyContent="space-between";
 
    } 
-  }
+ }
   
   window.addEventListener("scroll", changeCss , false);
+
+
+
+// cart 
+
+// cart 
+var btn1=document.querySelectorAll('.addtocart');
+var sidecartdata=document.getElementById('cartside');
+var sidecartcross=document.getElementById('sidecartcross');
+var sidecartcross2=document.getElementById('cross2');
+var cartbtn=document.getElementById('cartbtns');
+
+for(const btn of btn1 ){
+    btn.addEventListener('click',()=>{
+        sidecartdata.style.display='block';
+        document.getElementById("datacart").style.display='flex';
+        cartbtn.style.display='flex';
+    })
+}
+sidecartcross.addEventListener('click',()=>{
+    sidecartdata.style.display='none';
+})
+sidecartcross2.addEventListener('click',()=>{
+    document.getElementById("datacart").style.display='none';
+    cartbtn.style.display='none';
+
+})
+
+// messanger.style.display="none";
+contactlogo.addEventListener("click",()=>{
+    contactlogo.style.display="none";
+    messanger.style.display="block";
+
+})
+closebtn.addEventListener("click",()=>{
+    contactlogo.style.display="flex";
+    messanger.style.display="none";
+})
+
 
 
 
@@ -179,27 +187,27 @@ function toggleImages(id) {
     plusImg.style.display = plusImg.style.display === 'none' ? 'inline' : 'none';
     minusImg.style.display = minusImg.style.display === 'none' ? 'inline' : 'none';
 }
-// cart 
-var btn1=document.querySelectorAll('.addtocart');
-var sidecartdata=document.getElementById('cartside');
-var sidecartcross=document.getElementById('sidecartcross');
-var sidecartcross2=document.getElementById('cross2');
-var cartbtn=document.getElementById('cartbtns');
+let count = 0;
+const decrementBtn = document.getElementById('decrementBtn');
+const incrementBtn = document.getElementById('incrementBtn');
+const cartCount = document.getElementById('cartCount');
 
-for(const btn of btn1 ){
-    btn.addEventListener('click',()=>{
-        sidecartdata.style.display='block';
-        document.getElementById("datacart").style.display='flex';
-        cartbtn.style.display='flex';
-    })
-}
-sidecartcross.addEventListener('click',()=>{
-    sidecartdata.style.display='none';
-})
-sidecartcross2.addEventListener('click',()=>{
-    document.getElementById("datacart").style.display='none';
-    cartbtn.style.display='none';
+// // cartincrementdecrementbuttons
 
-})
+
+decrementBtn.addEventListener('click', () => {
+
+      if (count > 0) {
+    count--;
+    cartCount.textContent = count;
+  }
+ 
+});
+
+incrementBtn.addEventListener('click', () => {
+  count++;
+  cartCount.textContent = count;
+});
+
  
 
