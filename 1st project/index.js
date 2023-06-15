@@ -111,7 +111,7 @@ sidecartcross2.addEventListener('click',()=>{
 
 })
 
-
+// messanger 
 contactlogo.addEventListener("click",()=>{
     contactlogo.style.display="none";
     messanger.style.display="block";
