@@ -791,7 +791,7 @@ color: var(--orange);
   
     position: sticky;
     
-    width: 24%;
+    width: 28%;
     top: 0px;
     min-height: 100%;
     max-height: fit-content;
@@ -924,6 +924,35 @@ color: white;
        flex-direction: column;
       
     }
+    footer {
+        grid-template-columns: repeat(1, 1fr);
+         margin-left: 4rem;
+     }
+     .sidecart .sidecarttitle{
+         width: 40%
+     
+     }
+     
+      .popularProducts .allboxes{
+       
+         grid-template-columns: repeat(1,1fr);
+         }
+ 
+      footer .footer_img{
+         display: flex;
+         width: 230px;
+         height: 170px;
+ 
+         justify-content: center;
+         
+     }
+      nav .primarydata .bottomlinks #logo2 img{
+          width: 100%;
+  
+      }
+       .contactlogo{
+        left: 80%;
+      }
 }
 @media (max-width:837px){
      footer {
@@ -956,30 +985,7 @@ color: white;
 
 }
 @media (max-width:720px){
-     footer {
-       grid-template-columns: repeat(1, 1fr);
-        margin-left: 4rem;
-    }
-     .popularProducts .allboxes{
-      
-        grid-template-columns: repeat(1,1fr);
-        }
-
-     footer .footer_img{
-        display: flex;
-        width: 230px;
-        height: 170px;
-
-        justify-content: center;
-        
-    }
-     nav .primarydata .bottomlinks #logo2 img{
-         width: 100%;
- 
-     }
-      .contactlogo{
-       left: 80%;
-     }
+    
 }
 @media (max-width:550px){
 
@@ -991,6 +997,11 @@ color: white;
         justify-content: center;
         
         
+    }
+    .sidecart .sidecarttitle{
+        width: 100%;
+        left: 0;
+    
     }
     
      .contactlogo{
@@ -1394,160 +1405,7 @@ color: white;
 }
 
 
-/* Screen Breakpoints */
-@media (max-width:1200px) {
-    .faq-item {
-        margin-left: 5rem;
-        margin-right: 5rem;
-    }
-    
-}
-@media (max-width:990px) {
-    .faq-item {
-        margin-left: 5.5rem;
-        margin-right: 5.5rem;
-    }
-    
-    .faq .faq-font {
-        font-size: 2rem;
-    }
-}
-@media (max-width:760px) {
-    .faq {
-        padding: 3rem;
-    }
-    .faq-item {
-        margin-left: 3rem;
-        margin-right: 3rem;
-    }
-    /* Cards */
-    .aboutUsBottom {
-        margin-top: 4rem;
-    }
-    .aboutUsBottom h1 {
-        font-size: 1.5rem;
-    }
-    .aboutUsBottom  h2 {
-        /* font-size: 1.0rem; */
-        text-align: center;
-    }
-    .aboutUsBottom .cardRow {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-    .aboutUsBottom .card {
-        width: 100%;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    /* Contact US Message 760px */
-    .messageMap {
-        flex-direction: column;
-        
-    }
-    .messageMap div {
-        width:90%;
-        margin: 2rem;
-        margin-left: 0rem;
-        margin-bottom: 1rem;
-        
-    }
-    .messageContainer {
-        padding: 4rem;
-        padding-top: 2rem;
-    }    
-    .messageContainer div {
-        margin-left: 0rem;
-        width: 80%;
-    }
-    .messageContainer h2 {
-        font-size: 2rem;
-    }
-    .messageContainer .input {
-        font-size: small;    
-        padding: 12px;
-        width: 25%;
-    }
-    .messageContainer .inputArea {
-        margin: -1rem 0rem;
-        font-size: 0.8rem;
-        height: 8rem;
-    }
-    .messageContainer .btn {
-        font-size: small;
-        padding: 13px;
-        border-radius: 3px;
-    }
-    /* Contact Us Cards */
-    .contactUsCards {
-        flex-direction: column;
-        margin-left: 5rem;
-    }
-    .contactUsCards .cardsOuter {
-        width: 100%;
-    }
 
-
-}
-@media (max-width:360px) {
-    .faq-item {
-        margin-left: 1rem;
-        margin-right: 1rem;
-    }
-
-    .aboutUsCenter {
-        margin: 5px;
-        margin-top: 4.5rem;
-    }
-    .contactUsCenter h2 {
-        font-size: 1.8rem;
-    }
-    
- 
-    
-
-    .messageContainer {
-        margin: -1rem;
-        padding: 2rem;
-        /* width: 10%; */
-    }    
-    .messageContainer div {
-        flex-direction: column;
-        width: 100%;
-    }
-    .messageContainer h2 {
-        font-size: 2rem;
-    }
-    .messageContainer .input {
-        font-size: small;    
-        padding: 12px;
-        width: 100%;
-        margin: 8px 0rem;
-    }
-    .messageContainer .inputArea {
-        margin: -1rem 0rem;
-        font-size: 0.8rem;
-        height: 8rem;
-        width: 16rem;
-    }
-    .messageContainer .btn {
-        font-size: small;
-        padding: 13px;
-        border-radius: 3px;
-    }
-
-    iframe {
-        padding: -3rem;
-        margin: 0rem;
-        margin-top: -3rem;
-        margin-right: -6rem;
-        width: 19rem;
-    }
-    .contactUsCards {
-        margin-left: 0rem;
-    }
-}
 /* cart*/
 .cart{
     width: 90%;
@@ -1861,7 +1719,6 @@ padding: 0 15px;
 .downdata .leftdata label{
     color: var(--dark-grey);
     display: block;
-    /* margin-top: 10px;   */
     padding-left: 10px;  
     font-family: 14px;
     font-family: 'Lato',sans-serif;
@@ -1873,15 +1730,135 @@ padding: 0 15px;
     color: var(--dark-grey);
 }
 
+/* cart description   */
+#imagedata a{
+    font-size: 12px;
+    text-decoration: none;
+    font-family: 'Lato',sans-serif;
+   }
+   #imagedata a:hover{
+    color: grey;
+   }
+   #imagedata b{
+    font-size: 25px;
+    color: var(--orange);
+    display: block;
+    margin-bottom: 15px;
+   
+  }
+  #imagedata ul{
+    margin-top: 20px;
+    color: var(--dark-grey);
+    font-size: 12px;
+    list-style: circle;
+    margin-left: -30px;
+  }
+  #imagedata button{
+    width: 170px;
+    height: 50px;
+    background-color: var(--orange);
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    border: none;
+    margin-top: 30px;
+    font-family: 'Lato',sans-serif;
+
+  }
+  #imagedata .title{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+font-weight: 600;
+    font-family: 12px;
+  }
+  #imagedata .titledes{
+    color: var(--dark-grey);
+    font-family: 'Lato',sans-serif;
+    font-family: 12px;
+
+
+  }
+  #imagedata p{
+    display: flex;
+  }
+  #imagedata button:hover{
+    background-color: black;
+    transition: all 0.4s ease;
+  }
+  #color{
+    color: rgb(110, 108, 108);
+  }
+.images{
+  display: flex;
+  padding-top: 55px;
+  
+}
+#pic2{
+  padding-left: 30px;
+}
+#pic3{
+  padding-left: 30px;
+}
+#pic4{
+  padding-left: 30px;
+}
+#section1{
+  padding-top: 50px;
+}
+#section1 .container{
+    margin: 0 12%;
+}
+#section1 .container .row{
+    display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+
+}
+#section1 h1{
+font-family: 'Montserrat', sans-serif;
+font-size: 23px;
+font-weight: 500;
+}
+#section1 #imagedata{
+    margin-left: 15%;
+
+}
+#section2 .container .row{
+    display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+#section2 .container{
+    margin: 0 10%;
+}
+
+#section2{
+  padding-top: 50px;
+  text-align: center;
+}
+#section1 #image img{
+width: 380px;
+height: 500px;
+}
 
 @media (max-width:720px){
     .cart .leftcart{
         position: relative;
     width: 100%;    
     }
+    #section1 #imagedata{
+        margin-top: 30px;
+        margin-left: 0%;
+    
+    }
+    #section2 .container{
+        margin: 0 0%;
+    }
     .cart{
         width: 100%
     }
+   
     .cart .leftcart .pricesection>div{
         margin-right:1.0rem;
         }
@@ -1912,5 +1889,164 @@ padding: 0 15px;
         width: 63%;
         flex-direction: column;
         text-align: center;
+    }
+}
+/* Screen Breakpoints */
+@media (max-width:1200px) {
+    .faq-item {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    
+}
+@media (max-width:990px) {
+    .faq-item {
+        margin-left: 5.5rem;
+        margin-right: 5.5rem;
+    }
+    #section1 .container .row{
+        display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    
+    }
+    .faq .faq-font {
+        font-size: 2rem;
+    }
+}
+@media (max-width:760px) {
+    .faq {
+        padding: 3rem;
+    }
+    .faq-item {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    /* Cards */
+    .aboutUsBottom {
+        margin-top: 4rem;
+    }
+    .aboutUsBottom h1 {
+        font-size: 1.5rem;
+    }
+    .aboutUsBottom  h2 {
+        /* font-size: 1.0rem; */
+        text-align: center;
+    }
+    .aboutUsBottom .cardRow {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .aboutUsBottom .card {
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    /* Contact US Message 760px */
+    .messageMap {
+        flex-direction: column;
+        
+    }
+    .messageMap div {
+        width:90%;
+        margin: 2rem;
+        margin-left: 0rem;
+        margin-bottom: 1rem;
+        
+    }
+    .messageContainer {
+        padding: 4rem;
+        padding-top: 2rem;
+    }    
+    .messageContainer div {
+        margin-left: 0rem;
+        width: 80%;
+    }
+    .messageContainer h2 {
+        font-size: 2rem;
+    }
+    .messageContainer .input {
+        font-size: small;    
+        padding: 12px;
+        width: 25%;
+    }
+    .messageContainer .inputArea {
+        margin: -1rem 0rem;
+        font-size: 0.8rem;
+        height: 8rem;
+    }
+    .messageContainer .btn {
+        font-size: small;
+        padding: 13px;
+        border-radius: 3px;
+    }
+    /* Contact Us Cards */
+    .contactUsCards {
+        flex-direction: column;
+        margin-left: 5rem;
+    }
+    .contactUsCards .cardsOuter {
+        width: 100%;
+    }
+
+
+}
+@media (max-width:360px) {
+    .faq-item {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .aboutUsCenter {
+        margin: 5px;
+        margin-top: 4.5rem;
+    }
+    .contactUsCenter h2 {
+        font-size: 1.8rem;
+    }
+    
+ 
+    
+
+    .messageContainer {
+        margin: -1rem;
+        padding: 2rem;
+        /* width: 10%; */
+    }    
+    .messageContainer div {
+        flex-direction: column;
+        width: 100%;
+    }
+    .messageContainer h2 {
+        font-size: 2rem;
+    }
+    .messageContainer .input {
+        font-size: small;    
+        padding: 12px;
+        width: 100%;
+        margin: 8px 0rem;
+    }
+    .messageContainer .inputArea {
+        margin: -1rem 0rem;
+        font-size: 0.8rem;
+        height: 8rem;
+        width: 16rem;
+    }
+    .messageContainer .btn {
+        font-size: small;
+        padding: 13px;
+        border-radius: 3px;
+    }
+
+    iframe {
+        padding: -3rem;
+        margin: 0rem;
+        margin-top: -3rem;
+        margin-right: -6rem;
+        width: 19rem;
+    }
+    .contactUsCards {
+        margin-left: 0rem;
     }
 }
